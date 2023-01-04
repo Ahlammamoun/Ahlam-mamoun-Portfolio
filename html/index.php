@@ -4,8 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>Portfolio</title>
-    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+
+ 
+
 </head>
 
 <body>
@@ -13,7 +18,7 @@
 
         <header id="page-header">
             <h1><span>Hi,</span> <span>I'm Ahlam,</span><br>
-                <span class="scd">web developper and web mobile</span></h1>
+                <span class="scd">web developer and web mobile</span></h1>
             <p><span></span></p>
 
             <nav id="main-nav" title="main-nav">
@@ -25,6 +30,14 @@
                     <li><a href="#contact">Contact me</a></li>
                 </ul>
             </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+
+
         </header>
         <section id="intro" class="page-section">
             <div class="inner">
@@ -32,13 +45,10 @@
                     <span>Intro</span>
                 </h2>
                 <div class="section-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit quaerat distinctio tenetur
-                        facilis eum consequuntur sapiente ab.</p>
-                    <p class="text-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p> Integer iaculis mi urna, a pulvinar quam adipiscing ut. Vivamus vel vestibulum mauris. Nam sed
-                        est a orci iaculis mattis eu non ante. Maecenas at imperdiet quam. Donec sit amet arcu accumsan,
-                        posuere nulla at, pretium metus. Integer adipiscing tellus dolor, sed vestibulum purus congue
-                        eget. Fusce at tincidunt lacus, nec tincidunt eros. Vivamus aliquet purus non tincidunt posuere.
+                    <p class="citation">I never lose either I win or <cite>I learn</cite> with a caring dreamer spirit</p>
+                    <p class="text-up">my portfolio is a representation of all that i have learned and accomplished as a student in a digital school , the writing samples in this portfolio show how my critical thinking skills have evolved over the course of the program 
+                        <br>I hope you enjoy</p>
+                    <p> 
                     </p>
                 </div>
                 <div class="actions">
@@ -52,15 +62,13 @@
                 <h2 class="section-title"><span>Bio</span></h2>
                 <div class="section-content">
                     <img src="../images/me.jpg" alt="looking trought hole">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque suscipit nibh
-                        quis porttitor. Integer iaculis mi urna, a pulvinar quam adipiscing ut. Vivamus vel vestibulum
-                        mauris. Nam sed est a orci iaculis mattis eu non ante. Maecenas at imperdiet quam. Donec sit
-                        amet arcu accumsan, posuere nulla at, pretium metus. Integer adipiscing tellus dolor, sed
-                        vestibulum purus congue eget. Fusce at tincidunt lacus, nec tincidunt eros. Vivamus aliquet
-                        purus non tincidunt posuere.</p>
+                    <h3 class="text-bio">I'm a Back-End Developper oriented , I really like to contributed on a website by build mechanisms , with  
+                        multiple functions , secure data and make everything communicate , it's like put together the pieces of a puzzle <br>Here an evaluation of my skills and like I said , I still work  to progress
+                    </3>
+        
                     <table>
                         <tr>
-                            <th class="type-data" colspan="2">Développement</th>
+                            <th class="type-data" colspan="2">Developement</th>
                             <th class="type-data" colspan="2">Technique</th>
                         </tr>
                         <tr>
@@ -72,29 +80,34 @@
                         </tr>
                         <tr>
                             <td>HTML</td>
-                            <td>&#9733;&#9733;&#9733;&#9733;</td>
+                            <td><div class="l1"></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>CSS</td>
-                            <td>&#9733;&#9733;&#9733;</td>
+                            <td><div class="l2"></td>
                             <td>Bootstrap</td>
-                            <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                            <td><div class="l3"></td>
                         </tr>
                         <tr>
                             <td>PHP</td>
-                            <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                            <td><div class="l4"></td>
                             <td>Symfony / Wordpress</td>
-                            <td>&#9733;&#9733;&#9733;&#9733; / &#9733;&#9733;&#9733;</td>
+                            <td><div class="l5"></td>
                         </tr>
                         <tr>
                             <td>JAVASCRIPT</td>
-                            <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                            <td><div class="l6"></td>
                             <td>Vue.js</td>
-                            <td>&#9733;&#9733;&#9733;</td>
+                            <td><div class="l7"></td>
                         </tr>
                     </table>
+                    <h3 class="text-bio">
+                        What about me and my soft skill , I'm a passionate developer it's a second part of my professionnal life and really like it ,  I'm a hard worker with a team spirit accentuated <cite>does a little bird with water in his beak will stop a forest fire ? millions of them will do</cite> I think I'm a cheerfull
+                       person and I definitely prefer focus on the positive even though not all rosy</3>
+
+                    
                 </div>
 
             </div>
@@ -121,6 +134,7 @@
                         <p class="section-content_post">Excepturi quos unde aspernatur ut. Voluptate minus incidunt
                             totam at corporis. Minima labore harum ea, laudantium repellat illo eveniet totam id hic?
                         </p>
+                        
                         <footer>
                             <a href="../html/project2.html" class="more-button">Read more</a>
                         </footer>
@@ -142,62 +156,40 @@
             <div class="inner">
                 <h2 class="section-title"><span>Contact</span></h2>
                 <div class="section-content">
-                    <form action="">
-                        <p>
-                            <label>
-                                Human <input type="radio" name="type" value="human" />
-                                Not sure <input type="radio" name="type" value="notsure" checked />
-                                Robot <input type="radio" name="type" value="robot" />
-                            </label>
-                        </p>
-                        <p>
-                            <label for="field-subject">
-                                Subject
-                            </label>
-                            <select name="subject" id="field-subject">
-                                <option value="hi">Hi</option>
-                                <option value="work" selected>Work</option>
-                                <option value="feedback">Feedback</option>
-                            </select>
-                        </p>
-                        <p>
-                            <label for="field-nickname">Nickname</label>
-                            <input id="field-nickname" type="text" placeholder="Your nickname" />
-                        </p>
-                        <p>
-                            <label for="field-email">Email address</label>
-                            <input id="field-email" type="email" placeholder="Your email" />
-                        </p>
-                        <p>
-                            <label for="field-message">Email address</label>
-                            <textarea id="field-message" placeholder="Your message"></textarea>
-                        </p>
-                        <p>
-                            <input type="reset" class="action-button" value="reset">
-                            <button class="action-button">Send this message!</button>
-                        </p>
-                    </form>
-                    <aside>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt dolore officia eos minima,
-                        asperiores nesciunt expedita beatae voluptas consequuntur dolor alias at, blanditiis iusto
-                        laudantium, voluptates recusandae consectetur tempore eum!
-                    </aside>
+                <?php 
+         require __DIR__ . '/templates/form.tpl.php';
+        ?>
+                    <span id="msg"></span>
+                    <div class="social-icons">
+                        <p><i class="fas fa-paper-plane"></i>mestar.ale@gmail.com</p>
+                        <p><i class="fas fa-phone"></i>06.13.46.93.40</p>
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://facebook.com/"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://facebook.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/"><i class="fab fa-linkedin"></i></a>
+                        <a href="../images/my-cv.pdf" dowload class="btn bnt2">Download cv</a>
+
+                    </div>
+
                 </div>
             </div>
         </section>
         <footer id="page-footer">
 
-            Samuel Daurt copyright ... lorem ipsum dolor sit amet
+            Ahlam Mamoun copyright ... with work , better again <i class="fas fa-handshake"></i>
         </footer>
     </div>
-
-
-
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="../js/app.js "></script>
+
+
+
+
+
+
 
 </body>
 
