@@ -17,6 +17,7 @@ cite {
 p {
   font-size: larger;
   font-weight: bold;
+  color: #a7a5a5;
 }
 
 p.section-content_post {
@@ -54,6 +55,7 @@ h1 {
 h3.text-bio {
   background-color: black;
   color: #a7a5a5;
+  
 }
 
 img {
@@ -67,6 +69,7 @@ img {
 .inner {
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 /** actions */
@@ -182,7 +185,7 @@ img {
 }
 
 .section-title span {
-  padding: 1em 3em;
+  padding: 0.5em 5em;
   background: #ff004f;
 }
 
@@ -203,7 +206,7 @@ img {
 /* Bio */
 #bio {
   background: url(../images/background.jpg);
-
+  
 }
 
 #bio .section-title span {
@@ -236,12 +239,14 @@ img {
 #bio th.type-data {
   background-color: black;
   text-align: center;
-  color: #a7a5a5;
+  color: #c5c4c4;
 }
 
 #bio td {
   width: 25%;
   border: 1px solid #ff004f;
+  color: #949393;
+  text-transform : uppercase
 }
 
 /* Work */

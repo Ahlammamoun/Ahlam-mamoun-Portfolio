@@ -64,7 +64,7 @@
                     <img src="../images/me.jpg" alt="looking trought hole">
                     <h3 class="text-bio">I'm a Back-End Developper oriented , I really like to contributed on a website by build mechanisms , with  
                         multiple functions , secure data and make everything communicate , it's like put together the pieces of a puzzle <br>Here an evaluation of my skills and like I said , I still work  to progress
-                    </3>
+</h3>
         
                     <table>
                         <tr>
@@ -80,32 +80,32 @@
                         </tr>
                         <tr>
                             <td>HTML</td>
-                            <td><div class="l1"></td>
+                            <td><div class="l1"></div></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>CSS</td>
-                            <td><div class="l2"></td>
+                            <td><div class="l2"></div></td>
                             <td>Bootstrap</td>
-                            <td><div class="l3"></td>
+                            <td><div class="l3"></div></td>
                         </tr>
                         <tr>
                             <td>PHP</td>
-                            <td><div class="l4"></td>
+                            <td><div class="l4"></div></td>
                             <td>Symfony / Wordpress</td>
-                            <td><div class="l5"></td>
+                            <td><div class="l5"></div></td>
                         </tr>
                         <tr>
                             <td>JAVASCRIPT</td>
-                            <td><div class="l6"></td>
+                            <td><div class="l6"></div></td>
                             <td>Vue.js</td>
-                            <td><div class="l7"></td>
+                            <td><div class="l7"></div></td>
                         </tr>
                     </table>
                     <h3 class="text-bio">
                         What about me and my soft skill , I'm a passionate developer it's a second part of my professionnal life and really like it ,  I'm a hard worker with a team spirit accentuated <cite>does a little bird with water in his beak will stop a forest fire ? millions of them will do</cite> I think I'm a cheerfull
-                       person and I definitely prefer focus on the positive even though not all rosy</3>
+                       person and I definitely prefer focus on the positive even though not all rosy</h3>
 
                     
                 </div>
@@ -121,22 +121,21 @@
                     <article class="post">
                         <img src="../images/project-1.jpg" alt="sable">
                         <h1>Project 1</h1>
-                        <p class="section-content_post">Excepturi quos unde aspernatur ut. Voluptate minus incidunt
-                            totam at corporis. Minima labore harum ea, laudantium repellat illo eveniet totam id hic?
+                        <p class="section-content_post">C'est une application de vente de livres d'occasion , ici je vous présente le Front,
+                         cliquez pour plus d'informations et voir une démo
                         </p>
                         <footer>
-                            <a href="../html/project1.html" class="more-button">Read more</a>
+                            <a href="../views/project1.php" class="more-button">M'book</a>
                         </footer>
                     </article>
                     <article class="post">
                         <img src="../images/project-2.jpg" alt="sable">
                         <h1>Project 2</h1>
-                        <p class="section-content_post">Excepturi quos unde aspernatur ut. Voluptate minus incidunt
-                            totam at corporis. Minima labore harum ea, laudantium repellat illo eveniet totam id hic?
+                        <p class="section-content_post">C'est le Backoffice de l'application M'book , vous pouvez également cliquez pour plus d'informations et voir une démo
                         </p>
                         
                         <footer>
-                            <a href="../html/project2.html" class="more-button">Read more</a>
+                            <a href="../views/project2.php" class="more-button">M'book backoffice</a>
                         </footer>
                     </article>
                     <article class="post">
@@ -146,7 +145,7 @@
                             totam at corporis. Minima labore harum ea, laudantium repellat illo eveniet totam id hic?
                         </p>
                         <footer>
-                            <a href="../html/project3.html" class="more-button">Read more</a>
+                            <a href="../views/project3.php" class="more-button">Movie'time</a>
                         </footer>
                     </article>
                 </div>
@@ -166,7 +165,7 @@
                         <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
                         <a href="https://facebook.com/"><i class="fab fa-twitter-square"></i></a>
                         <a href="https://facebook.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://facebook.com/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/ahlam-mamoun/"><i class="fab fa-linkedin"></i></a>
                         <a href="../images/my-cv.pdf" dowload class="btn bnt2">Download cv</a>
 
                     </div>

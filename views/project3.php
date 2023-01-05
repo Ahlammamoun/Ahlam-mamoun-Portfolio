@@ -5,8 +5,6 @@
     <title>Portfolio</title>
     <!-- <link rel="stylesheet" href="../css/reset.css"> -->
     <link rel="stylesheet" href="../css/style.css">
-
-  
 </head>
 <body>
     <div id="page-wrapper">
@@ -17,35 +15,32 @@
            
             <nav id="main-nav" title="main-nav">
                 <ul>
-                    <li><a href="../html/index.html">Home</a></li>
-                    <li><a href="../html/#contact">Contact me</a></li>
+                    <li><a href="../views/home.php">Home</a></li>
+                    <li><a href="../views/home.php#contact">Contact me</a></li>
                 </ul>
             </nav>
         </header>
         <section id="intro" class="page-section">
             <div class="inner">
                 <h2 class="section-title">
-                    <span>M'book</span>
+                    <span>Movies'Time</span>
                 </h2>
                 <div class="section-content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum suscipit quaerat distinctio tenetur facilis eum consequuntur sapiente ab.</p>
                     <p class="text-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  
-
-                        <a href="https://www.youtube.com/watch?v=9jK-NcRmVcw&list=RD9jK-NcRmVcw&start_radio=1&ab_channel=EuropeVEVO" class="action-button action-button-demo"><i class="fab fa-youtube"></i></a>
                    
-                   
+                    <a href="https://www.youtube.com/watch?v=9jK-NcRmVcw&list=RD9jK-NcRmVcw&start_radio=1&ab_channel=EuropeVEVO" class="action-button action-button-demo"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="actions">
-                    <a href="../html/#contact" class="action-button action-button-line">Contact me</a>
-                    <a href="../html/project2.html" class="action-button action-button-line">next work</a>
+                   
+                    <a href="../views/home.php#contact" class="action-button action-button-line">Contact me</a>
+                    <a href="../views/project1.php" class="action-button action-button-line">back to M'book</a>
                 </div>
             </div>
         </section>
         </div>
 
         <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+
     </body>
     </html>
-
-    
