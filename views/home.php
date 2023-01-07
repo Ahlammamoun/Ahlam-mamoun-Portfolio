@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
 
@@ -61,7 +61,7 @@
             <div class="inner">
                 <h2 class="section-title"><span>Bio</span></h2>
                 <div class="section-content">
-                    <img src="../images/me.jpg" alt="looking trought hole">
+                    <img src="./images/me.jpg" alt="looking trought hole">
                     <h3 class="text-bio">I'm a Back-End Developper oriented , I really like to contributed on a website by build mechanisms , with  
                         multiple functions , secure data and make everything communicate , it's like put together the pieces of a puzzle <br>Here an evaluation of my skills and like I said , I still work  to progress
 </h3>
@@ -182,7 +182,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="../js/app.js "></script>
+    <script src="./js/app.js "></script>
 
 
 
