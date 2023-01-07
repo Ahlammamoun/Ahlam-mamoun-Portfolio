@@ -44,35 +44,12 @@ if (!empty($_POST)) {
 } else {
 
     // non, une entrée n'a pas été insérée dans la BDD
-    exit('❌ erreur, formulaire non envoyé);
+    exit('❌ erreur,formulaire non ajouté ');
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 }
    
-
-
-
-
-
-
- 
-
-
-
-
-
 
 require __DIR__.'/views/home.php';
 
