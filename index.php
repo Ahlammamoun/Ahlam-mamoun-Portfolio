@@ -44,7 +44,7 @@ if (!empty($_POST)) {
 } else {
 
     // non, une entrée n'a pas été insérée dans la BDD
-    exit('❌ erreur, jeu vidéo non ajouté à la BDD');
+    exit('❌ erreur, formulaire non envoyé);
 
 }
 
