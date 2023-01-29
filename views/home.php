@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
 
@@ -14,45 +14,53 @@
 </head>
 
 <body>
+
+
     <div id="page-wrapper">
 
-        <header id="page-header">
-            <h1><span>Hi,</span> <span>I'm Ahlam,</span><br>
-                <span class="scd">web developer and web mobile</span></h1>
-            <p><span></span></p>
+    <header id="page-header">
 
-            <nav id="main-nav" title="main-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#intro">Hello</a></li>
-                    <li><a href="#bio">Who am i</a></li>
-                    <li><a href="#work">What i do</a></li>
-                    <li><a href="#contact">Contact me</a></li>
+    <nav id="main-nav" title="main-nav">
+                <ul class="nav-menu">
+                   <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                   <li class="nav-item"><a href="#intro" class="nav-link">About</a></li>
+                   <li class="nav-item"><a href="#bio" class="nav-link">Bio</a></li>
+                   <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                   <li class="nav-item"><a href="#contact" class="nav-link">Contact me</a></li>
                 </ul>
-            </nav>
+            
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
 
+</nav>
+           
 
 
+
+            <h1><span>Hi,</span> <span>I'm Ahlam,</span><br>
+                <span class="scd">web developer and web mobile</span></h1>
+            <p><span></span></p>
+
+        
+       
         </header>
         <section id="intro" class="page-section">
             <div class="inner">
                 <h2 class="section-title">
-                    <span>Intro</span>
+                    <span>About</span>
                 </h2>
                 <div class="section-content">
-                    <p class="citation">I never lose either I win or <cite>I learn</cite> with a caring dreamer spirit</p>
+                    <p class="citation"><cite>I never lose either I win or I learn</cite></p>
                     <p class="text-up">my portfolio is a representation of all that i have learned and accomplished as a student in a digital school , the writing samples in this portfolio show how my critical thinking skills have evolved over the course of the program 
                         <br>I hope you enjoy</p>
                     <p> 
                     </p>
                 </div>
                 <div class="actions">
-                    <a href="#work" class="action-button action-button-plain">See my work</a>
+                    <a href="#work" class="action-button action-button-plain">Work</a>
                     <a href="#contact" class="action-button action-button-line">Contact me</a>
                 </div>
             </div>
@@ -61,7 +69,11 @@
             <div class="inner">
                 <h2 class="section-title"><span>Bio</span></h2>
                 <div class="section-content">
-                    <img src="./images/me.jpg" alt="looking trought hole">
+                    <div class="picture">
+                <canvas id="canvas1">
+                   
+</canvas>
+</div>
                     <h3 class="text-bio">I'm a Back-End Developper oriented , I really like to contributed on a website by build mechanisms , with  
                         multiple functions , secure data and make everything communicate , it's like put together the pieces of a puzzle <br>Here an evaluation of my skills and like I said , I still work  to progress
 </h3>
@@ -104,7 +116,7 @@
                         </tr>
                     </table>
                     <h3 class="text-bio">
-                        What about me and my soft skill , I'm a passionate developer it's a second part of my professionnal life and really like it ,  I'm a hard worker with a team spirit accentuated <cite>does a little bird with water in his beak will stop a forest fire ? millions of them will do</cite> I think I'm a cheerfull
+                        What about me and my soft skill , I'm a passionate developer it's a second part of my professionnal life and really like it ,  I'm a hard worker with a team spirit accentuated , I think I'm a cheerfull
                        person and I definitely prefer focus on the positive even though not all rosy</h3>
 
                     
@@ -142,7 +154,7 @@
                         <img src="../images/project-3.jpg" alt="sable">
                         <h1>Project 3</h1>
                         <p class="section-content_post">Excepturi quos unde aspernatur ut. Voluptate minus incidunt
-                            totam at corporis. Minima labore harum ea, laudantium repellat illo eveniet totam id hic?
+                            totam at corporis. Minima labore harum ea, laudantium repellat illo eveniet?
                         </p>
                         <footer>
                             <a href="../views/project3.php" class="more-button">Movie'time</a>
@@ -182,7 +194,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="./js/app.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+    <script src="../js/app.js "></script>
 
 
 

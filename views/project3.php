@@ -14,9 +14,9 @@
                
            
             <nav id="main-nav" title="main-nav">
-                <ul>
-                    <li><a href="../views/home.php">Home</a></li>
-                    <li><a href="../views/home.php#contact">Contact me</a></li>
+            <ul class="nav-menu">
+                    <li class="nav-item"><a href="../views/home.php"  class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../views/home.php#contact"  class="nav-link">Contact me</a></li>
                 </ul>
             </nav>
         </header>

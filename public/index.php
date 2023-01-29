@@ -1,11 +1,11 @@
 
 <?php
 
-require __DIR__.'/utils/database.php'; 
+require __DIR__.'/../utils/database.php'; 
 
 
 if (!empty($_POST)) {
-    $Nickname =  $_POST['Nickname'] ?? false;
+    $Firstname =  $_POST['Firstname'] ?? false;
     $Lastname =  $_POST['Lastname'] ?? false;
     $Entreprise =  $_POST['Entreprise'] ?? false;
     $Email = $_POST['email'] ?? false;
@@ -15,9 +15,9 @@ if (!empty($_POST)) {
 
     //On insère les données reçues
     $sth = $dbco->prepare("
-     INSERT INTO contact(Nickname, Lastname, Entreprise, email, description)
-     VALUES(:Nickname, :Lastname, :Entreprise, :email, :description)");
-    $sth->bindParam(':Nickname', $Nickname);
+     INSERT INTO contact(Firstname, Lastname, Entreprise, email, description)
+     VALUES(:Firstname, :Lastname, :Entreprise, :email, :description)");
+    $sth->bindParam(':Firstname', $Firstname);
     $sth->bindParam(':Lastname', $Lastname);
     $sth->bindParam(':Entreprise', $Entreprise);
     $sth->bindParam(':email', $Email);
@@ -36,8 +36,12 @@ if (!empty($_POST)) {
     // en effet :
     // header('Location: index.php');  // fonctionne
     // header('Location : index.php'); // déclenche un Internal Server Error
-    echo 'merci';
-    header('Location: index.php');
+    
+    header('Location: index.php#home');
+    
+
+
+
     // on s'assure que la suite du code ne soit pas exécutée une fois la redirection effectuée
     exit;
 
@@ -51,5 +55,5 @@ if (!empty($_POST)) {
 }
    
 
-require __DIR__.'/views/home.php';
+require __DIR__.'/../views/home.php';
 
