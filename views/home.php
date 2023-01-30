@@ -43,7 +43,9 @@
             <h1><span>Hi,</span> <span>I'm Ahlam,</span><br>
                 <span class="scd">web developer and web mobile</span></h1>
             <p><span></span></p>
-
+<br>
+            <canvas id="canvas1">
+                </canvas>
         
        
         </header>
@@ -69,14 +71,11 @@
             <div class="inner">
                 <h2 class="section-title"><span>Bio</span></h2>
                 <div class="section-content">
-                    <div class="picture">
-                <canvas id="canvas1">
-                   
-</canvas>
-</div>
+             
+            
                     <h3 class="text-bio">I'm a Back-End Developper oriented , I really like to contributed on a website by build mechanisms , with  
                         multiple functions , secure data and make everything communicate , it's like put together the pieces of a puzzle <br>Here an evaluation of my skills and like I said , I still work  to progress
-</h3>
+                    </h3>
         
                     <table>
                         <tr>
@@ -118,10 +117,10 @@
                     <h3 class="text-bio">
                         What about me and my soft skill , I'm a passionate developer it's a second part of my professionnal life and really like it ,  I'm a hard worker with a team spirit accentuated , I think I'm a cheerfull
                        person and I definitely prefer focus on the positive even though not all rosy</h3>
-
+               
                     
                 </div>
-
+       
             </div>
         </section>
         <section id="work" class="page-section">
