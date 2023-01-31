@@ -30,7 +30,7 @@ myImage.addEventListener('load', function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     let particlesArray = [];
-    const numberOfParticles = 100;
+    const numberOfParticles = 3000;
 
     let = mappedImage = [];
     for (let y = 0; y < canvas.height; y++) {
@@ -96,7 +96,7 @@ myImage.addEventListener('load', function () {
         draw() {
 
             ctx.beginPath();
-            ctx.fillStyle = 'white';
+            ctx.fillStyle = '#778899';
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             ctx.fill();
 
@@ -118,7 +118,7 @@ myImage.addEventListener('load', function () {
     function animate() {
        // ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
         ctx.globalAlpha = 0.05;
-        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillStyle = 'black';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.globalAlpha = 0.2;
         for (let i = 0; i < particlesArray.length; i++) {

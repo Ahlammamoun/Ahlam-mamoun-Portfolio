@@ -35,15 +35,14 @@
                 <span class="bar"></span>
             </div>
 
-</nav>
-           
-
-
-
+    </nav>
             <h1><span>Hi,</span> <span>I'm Ahlam,</span><br>
                 <span class="scd">web developer and web mobile</span></h1>
             <p><span></span></p>
 <br>
+
+
+
             <canvas id="canvas1">
                 </canvas>
         
