@@ -32,7 +32,7 @@
                         facilis eum consequuntur sapiente ab.</p>
                     <p class="text-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
-                    <a href="https://www.youtube.com/watch?v=9jK-NcRmVcw&list=RD9jK-NcRmVcw&start_radio=1&ab_channel=EuropeVEVO" class="action-button action-button-demo"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="action-button action-button-demo"><i class="fab fa-youtube"></i></a>
 
 
                 </div>
