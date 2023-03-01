@@ -6,7 +6,6 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
 
  
@@ -130,32 +129,31 @@
                 <div class="section-content">
                     <article class="post">
                         <img src="../images/project-1.jpg" alt="sable">
-                        <h1>Project 1</h1>
-                        <p class="section-content_post">C'est une application de vente de livres d'occasion , ici je vous présente le Front,
-                         cliquez pour plus d'informations et voir une démo
+                        <h1>M'Book</h1>
+                        <p class="section-content_post">This is an application of saling second hand Books .
+                      
                         </p>
                         <footer>
-                            <a href="../views/project1.php" class="more-button">M'book</a>
+                            <a href="../views/project1.php" class="more-button">Demonstration</a>
                         </footer>
                     </article>
                     <article class="post">
                         <img src="../images/project-2.jpg" alt="sable">
-                        <h1>Project 2</h1>
-                        <p class="section-content_post">C'est le Backoffice de l'application M'book , vous pouvez également cliquez pour plus d'informations et voir une démo
+                        <h1>Movie Time</h1>
+                        <p class="section-content_post">This is an application of Movies repertory .
                         </p>
                         
                         <footer>
-                            <a href="../views/project2.php" class="more-button">M'book backoffice</a>
+                            <a href="../views/project2.php" class="more-button">Demonstration</a>
                         </footer>
                     </article>
                     <article class="post">
                         <img src="../images/project-3.jpg" alt="sable">
-                        <h1>Project 3</h1>
-                        <p class="section-content_post">Excepturi quos unde aspernatur ut. Voluptate minus incidunt
-                            totam at corporis. Minima labore harum ea, laudantium repellat illo eveniet?
+                        <h1>MotorBike</h1>
+                        <p class="section-content_post">This is a simple application of  beautiful Bike .
                         </p>
                         <footer>
-                            <a href="../views/project3.php" class="more-button">Movie'time</a>
+                            <a href="../views/project3.php" class="more-button">Demonstration</a>
                         </footer>
                     </article>
                 </div>
@@ -195,7 +193,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
-    <script src="../js/app.js "></script>
+    <!--<script src="../js/app.js "></script>-->
 
 
 
