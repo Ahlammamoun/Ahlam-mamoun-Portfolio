@@ -227,7 +227,7 @@ window.addEventListener('load', () => {
 
         })
         .changeDelay(20)
-        .typeString('Back end, speciality PHP ')
+        .typeString('Back end, PHP ')
 
 
         .pauseFor(1500)
@@ -243,7 +243,7 @@ window.addEventListener('load', () => {
         .typeString('<span style="color: #ff004f"> &#x2794; Vue.js</span> ')
         .pauseFor(1500)
         .deleteChars(14)
-        .typeString('<span style="color: #000000">  Back end, speciality PHP </span> ')
+        .typeString('<span style="color: #000000"> Back end, PHP  </span> ')
         .start()
 
 
