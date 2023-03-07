@@ -223,7 +223,7 @@ window.addEventListener('load', () => {
     new Typewriter(pSpan, 3, {
 
 
-            deleteSpeed: 10
+            deleteSpeed: 15
 
         })
         .changeDelay(20)
