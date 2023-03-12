@@ -175,39 +175,40 @@ window.addEventListener('load', () => {
             opacity: 0,
             ease: "power3.out"
         }, 0.3, )
-        .from(l1, 150, {
+        .from(l1, 30, {
             width: 0,
-            ease: "power2.out"
+            ease: "power3.out",
+           
         }, 0.3, )
 
-        .from(l2, 150, {
+        .from(l2, 30, {
             width: 0,
-            ease: "power2.out"
+            ease: "power3.out"
         }, 0.3, )
 
 
-        .from(l3, 150, {
+        .from(l3, 30, {
             width: 0,
-            ease: "power2.out"
+            ease: "power3.out"
         }, 0.3, )
 
-        .from(l4, 150, {
+        .from(l4, 30, {
             width: 0,
-            ease: "power2.out"
+            ease: "power3.out"
         }, 0.3, )
 
-        .from(l5, 150, {
+        .from(l5, 30, {
             width: 0,
-            ease: "power2.out"
+            ease: "power3.out"
         }, 0.3, )
-        .from(l6, 150, {
+        .from(l6, 30, {
             width: 0,
-            ease: "power2.out"
+            ease: "power3.out"
         }, 0.3, )
 
-        .from(l7, 150, {
+        .from(l7, 30, {
             width: 0,
-            ease: "power2.out"
+            ease: "power3.out"
         }, 0.3, )
 
 
@@ -245,28 +246,6 @@ window.addEventListener('load', () => {
         .deleteChars(14)
         .typeString('<span style="color: #000000"> Back end, PHP  </span> ')
         .start()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

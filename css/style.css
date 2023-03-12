@@ -427,7 +427,7 @@ input {
 
 
 .l1 {
-  width: 50px;
+  width: 180px;
   height: 10px;
   background-color: #ff004f;
   border-radius: 5px;
@@ -437,7 +437,7 @@ input {
 }
 
 .l2 {
-  width: 250px;
+  width: 135px;
   height: 10px;
   background-color: #ff004f;
   border-radius: 5px;
@@ -447,7 +447,7 @@ input {
 
 
 .l3 {
-  width: 90px;
+  width: 180px;
   height: 10px;
   background-color: #ff004f;
   border-radius: 5px;
@@ -457,7 +457,7 @@ input {
 }
 
 .l4 {
-  width: 120px;
+  width: 180px;
   height: 10px;
   background-color: #ff004f;
   border-radius: 5px;
@@ -467,7 +467,7 @@ input {
 }
 
 .l5 {
-  width: 70px;
+  width: 180px;
   height: 10px;
   background-color: #ff004f;
   border-radius: 5px;
@@ -477,7 +477,7 @@ input {
 }
 
 .l6 {
-  width: 50px;
+  width: 135px;
   height: 10px;
   background-color: #ff004f;
   border-radius: 5px;
@@ -487,7 +487,7 @@ input {
 }
 
 .l7 {
-  width: 110px;
+  width: 135px;
   height: 10px;
   background-color: #ff004f;
   border-radius: 5px;
@@ -575,7 +575,10 @@ a {
   font-size: 2rem
 }
 
-
+.github_link {
+  font-size: medium;
+  color: black;
+}
 .nav-link {
   transition: 0.7s ease;
   color: #a7a5a5;
