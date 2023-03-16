@@ -59,7 +59,10 @@ h3.text-bio {
   color: #a7a5a5;
 
 }
-
+img {
+  width: 150px;
+  height: 150px;
+}
 
 img.my-picture {
  
