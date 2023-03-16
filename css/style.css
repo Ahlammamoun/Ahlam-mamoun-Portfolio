@@ -60,30 +60,16 @@ h3.text-bio {
 
 }
 
-img {
-  max-width: 100%;
-}
 
-img {
-  width: 300px;
-  height: 150px;
-}
-
-#canvas1 {
-  
-  border:  solid 30px grey;
-
-  background: radial-gradient(circle at 100%, #333, #333 50%, grey 75%, #333 75%);
-  border-style: double;
+img.my-picture {
  
-
+  
+  border:  solid 30px black;
+  border-style: double;
   border-radius: 50%;
-  top: 47%;
-  left: 94%;
-  transform: translate(0%, 0%);
   width: 200px;
   height: 200px;
-  
+ 
 }
 
 /** Wrapper */
