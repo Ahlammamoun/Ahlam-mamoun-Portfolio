@@ -59,20 +59,21 @@ h3.text-bio {
   color: #a7a5a5;
 
 }
+
 img {
-  width: 150px;
+  width: 330px;
   height: 150px;
 }
 
 img.my-picture {
- 
-  
-  border:  solid 30px black;
+
+
+  border: solid 30px black;
   border-style: double;
   border-radius: 50%;
   width: 200px;
   height: 200px;
- 
+
 }
 
 /** Wrapper */
@@ -568,6 +569,7 @@ a {
   font-size: medium;
   color: black;
 }
+
 .nav-link {
   transition: 0.7s ease;
   color: #a7a5a5;
