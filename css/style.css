@@ -653,15 +653,22 @@ a {
 
   }
 
-  img {
-    width: 100px;
-    height: 100px;
-  }
-
 
 }
 
-@media(max-width:1215px) {
+
+@media(max-width: 916px) {
+
+
+  img {
+    width: 100px;
+    height: 80px;
+  }
+}
+
+
+
+@media(max-width:1250px) {
 
 
   img {
