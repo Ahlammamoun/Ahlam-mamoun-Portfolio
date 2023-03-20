@@ -61,7 +61,7 @@ h3.text-bio {
 }
 
 img {
-  width: 330px;
+  max-width: 330px;
   height: 150px;
 }
 
@@ -584,6 +584,8 @@ a {
 
 @media(max-width:768px) {
 
+
+
   .hamburger {
 
 
@@ -627,12 +629,12 @@ a {
     margin: 15px 0;
   }
 
+
   .nav-menu.active {
 
 
     left: 0px;
   }
-
 
   #bio table {
     display: none;
@@ -651,5 +653,19 @@ a {
 
   }
 
+  img {
+    width: 150px;
+    height: 150px;
+  }
 
+
+}
+
+@media(max-width:1215px) {
+
+
+  img {
+    width: 200px;
+    height: 150px;
+  }
 }
