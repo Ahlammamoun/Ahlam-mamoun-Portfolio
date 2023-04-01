@@ -53,9 +53,11 @@ h1 {
   color: white;
   font-weight: bold;
 }
+
 .demo {
   color: #000;
 }
+
 h3.text-bio {
   background-color: black;
   color: #a7a5a5;
@@ -405,18 +407,6 @@ input {
 }
 
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-  font-size: xx-large;
-
-}
-
 
 .l1 {
   width: 180px;
@@ -523,6 +513,16 @@ li {
 }
 
 
+.nav-menu {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+
+}
+
 #main-nav {
 
   display: flex;
@@ -536,18 +536,6 @@ li {
 
 
 }
-
-ul.nav-menu {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-
-
-}
-
-
 
 .nav-branding {
 
@@ -563,8 +551,9 @@ li {
 a {
 
   text-decoration: none;
-  color: white;
-  font-size: 2rem
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 17px;
+  font-weight: bolder;
 }
 
 .github_link {
@@ -574,9 +563,7 @@ a {
 
 .nav-link {
   transition: 0.7s ease;
-  color: #a7a5a5;
-  font-size: initial;
-  font-weight: bolder;
+
 }
 
 .nav-link:hover {
@@ -584,10 +571,18 @@ a {
   color: #ff004f;
 }
 
-@media(max-width:768px) {
+@media(max-width: 1250px) {
 
+  a {
 
+    color: #ff004f;
+    font-weight: bolder;
+    font-size: 23px;
+  }
+  .nav-link:hover {
 
+    color: black;
+  }
   .hamburger {
 
 
@@ -614,23 +609,24 @@ a {
     transform: translate(-8px) rotate(-45deg);
   }
 
+  h1 {
+    display: none;
+  }
+
   .nav-menu {
     position: fixed;
-    left: -119%;
-    top: 70px;
-
+    left: -115%;
+    top: 2px;
     flex-direction: column;
-    background-color: black;
-    width: 13%;
+    width: 28%;
     text-align: center;
     transition: 0.3s;
   }
 
   .nav-items {
 
-    margin: 15px 0;
+    margin: 16px 0;
   }
-
 
   .nav-menu.active {
 
@@ -638,26 +634,7 @@ a {
     left: 0px;
   }
 
-  #bio table {
-    display: none;
-  }
-
-  .social-icons {
-    width: 15px;
-  }
-
-  p {
-    display: none;
-  }
-
-  #page-header h1 {
-    font-size: medium;
-
-  }
-
-
 }
-
 
 @media(max-width: 916px) {
 
@@ -666,6 +643,7 @@ a {
     width: 100px;
     height: 80px;
   }
+
 }
 
 
