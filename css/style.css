@@ -10,7 +10,9 @@ a {
   font-size: 0.8em;
   font-family: cursive;
 }
-
+a.footer {
+  margin-left: auto;
+}
 cite {
   font-family: cursive;
 }
@@ -363,7 +365,7 @@ img.my-picture {
 .social-icons a {
   text-decoration: none;
   font-size: 30px;
-  margin-left: 25px;
+ /*margin-left: 25px;*/
   color: #ababab;
   display: inline-block;
   transition: transform 0.5s;
