@@ -24,7 +24,7 @@ p {
 }
 
 p.section-content_post {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 p.text-up {
@@ -131,7 +131,7 @@ img.my-picture {
   text-align: center;
   text-transform: uppercase;
   /*background: url(../images/background.jpg);*/
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -192,7 +192,7 @@ img.my-picture {
 /* Bio */
 #bio {
   /*background: url(../images/background.jpg);*/
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color:rgb(255, 255, 255);
 
 }
 
@@ -278,7 +278,7 @@ img.my-picture {
 
 /* Contact */
 #contact {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgb(255, 255, 255);
   /*background: url(../images/background.jpg);*/
   color: black;
   text-align: left;
