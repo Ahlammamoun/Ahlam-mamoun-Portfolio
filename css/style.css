@@ -20,7 +20,7 @@ cite {
 p {
   font-size: larger;
   font-weight: bold;
-  color: #a7a5a5;
+  color: black;
 }
 
 p.section-content_post {
@@ -28,9 +28,8 @@ p.section-content_post {
 }
 
 p.text-up {
-
   background: url(../images/background.jpg);
-  color: #a7a5a5;
+  color:#a7a5a5;
   font-size: x-large;
   font-weight: bolder;
   font-family: cursive;
@@ -126,12 +125,13 @@ img.my-picture {
    * Header
    */
 #page-header {
-  background-color: #ccc;
-  color: rgba(255, 255, 255, 0.75);
+
+  color: black;
   padding: 5em 0 10em;
   text-align: center;
   text-transform: uppercase;
-  background: url(../images/background.jpg);
+  /*background: url(../images/background.jpg);*/
+  background-color: rgba(255, 255, 255, 0.75);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -191,7 +191,8 @@ img.my-picture {
 
 /* Bio */
 #bio {
-  background: url(../images/background.jpg);
+  /*background: url(../images/background.jpg);*/
+  background-color: rgba(255, 255, 255, 0.75);
 
 }
 
@@ -277,7 +278,8 @@ img.my-picture {
 
 /* Contact */
 #contact {
-  background: url(../images/background.jpg);
+  background-color: rgba(255, 255, 255, 0.75);
+  /*background: url(../images/background.jpg);*/
   color: black;
   text-align: left;
 }
@@ -366,7 +368,7 @@ img.my-picture {
   text-decoration: none;
   font-size: 30px;
  /*margin-left: 25px;*/
-  color: #ababab;
+  color: #000;
   display: inline-block;
   transition: transform 0.5s;
 }
@@ -535,6 +537,8 @@ li {
   position: fixed;
   top: 0;
   border: solid 1px #ff004f;
+  background-color: #000;
+  
 
 
 }
