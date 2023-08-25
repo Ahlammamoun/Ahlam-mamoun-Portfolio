@@ -22,7 +22,9 @@ p {
   font-weight: bold;
   color: black;
 }
-
+p.footer {
+  color: whitesmoke;
+}
 p.section-content_post {
   background-color: rgb(255, 255, 255);
 }
@@ -278,9 +280,9 @@ img.my-picture {
 
 /* Contact */
 #contact {
-  background-color: rgb(255, 255, 255);
+  background-color: black;
   /*background: url(../images/background.jpg);*/
-  color: black;
+  color: whitesmoke;
   text-align: left;
 }
 
@@ -368,7 +370,7 @@ img.my-picture {
   text-decoration: none;
   font-size: 30px;
  /*margin-left: 25px;*/
-  color: #000;
+  color: whitesmoke;
   display: inline-block;
   transition: transform 0.5s;
 }
