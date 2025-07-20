@@ -1,48 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>Projet MotorBike | Portfolio Ahlam</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-    <div id="page-wrapper">
+  <div id="page-wrapper">
 
-        <header id="page-header">
-            <h1 class="demo">DEMO</h1>
-               
-           
-            <nav id="main-nav" title="main-nav">
-            <ul class="nav-menu">
-                    <li class="nav-item"><a href="./#"  class="nav-link">Acceuil</a></li>
-                    <li class="nav-item"><a href="./#contact"  class="nav-link">Me contacter</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section id="intro" class="page-section-demo">
-            <div class="inner">
-                <h2 class="section-title">
-                    <span>MotorBike</span>
-                </h2>
-                <div class="section-content">
-                    <p class="text-up">Symfony Project, Doctrine, bootstrap , database , full CRUD , 1N cardinalité , environnement Dev LAMP, connexion , authorisations, ajout d'une moto et de ses propriétés ....
-                        <a href="https://github.com/Ahlammamoun/motorbike" class="github_link"><br>github link</a>
-                    </p>
-                   
-                    <a href="https://www.youtube.com/watch?v=dOq2r1LSCJQ" class="action-button action-button-demo">click</a>
-                </div>
-                <div class="actions">
-                   
-                    <a href="./#contact" class="action-button action-button-line">me contacter</a>
-                    <a href="project4.html" class="action-button action-button-line">Blogix</a>
-                </div>
-            </div>
-        </section>
+    <header id="page-header">
+      <nav id="main-nav">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="index.html#contact" class="nav-link">Me contacter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="intro" class="page-section-demo">
+      <div class="inner">
+        <h2 class="section-title"><span>MotorBike</span></h2>
+
+        <div class="section-content">
+          <p class="text-up">
+            <strong>MotorBike</strong> est un projet Symfony dédié à la gestion d’un catalogue de motos.<br><br>
+            • Framework : Symfony + Doctrine ORM<br>
+            • Front : Bootstrap 5 pour le design<br>
+            • Base de données : Relations 1:N (motos ↔ propriétés)<br>
+            • Fonctionnalités : Authentification, rôles, autorisations<br>
+            • Dev : Environnement LAMP, formulaire dynamique, CRUD complet<br>
+            <br>
+            🔗 <a href="https://github.com/Ahlammamoun/motorbike" target="_blank" class="github_link">Voir le code sur GitHub</a>
+          </p>
+
+          <div class="project-links">
+            <a href="https://www.youtube.com/watch?v=dOq2r1LSCJQ" target="_blank" class="btn">🎬 Voir la démo</a>
+          </div>
         </div>
 
-     
+        <div class="actions">
+          <a href="project2.html" class="action-button action-button-line">Projet précédent</a> |
+          <a href="project4.html" class="action-button action-button-line">Projet suivant</a>
+        </div>
+      </div>
+    </section>
 
-    </body>
-    </html>
+    <footer id="page-footer">
+      &copy; Ahlam Mamoun – Projet MotorBike
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -1,146 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-   
-  
+  <meta charset="UTF-8" />
+  <title>Mes projets | Portfolio Ahlam</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <div id="page-wrapper">
+  <div id="page-wrapper">
+    <header id="page-header">
+      <nav id="main-nav">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="index.html#contact" class="nav-link">Me contacter</a></li>
+        </ul>
+        <!-- Menu burger -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
-        <header id="page-header">
-            <h1 class="demo">DEMO</h1>
-               
-           
-            <nav id="main-nav" title="main-nav">
-            <ul class="nav-menu">
-                    <li class="nav-item"><a href="./#"  class="nav-link">Acceuil</a></li>
-                    <li class="nav-item"><a href="./#contact"  class="nav-link">Me contacter</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <section id="work" class="page-section">
-            <div class="inner">
-                <h2 class="section-title">
-                    <span>projets</span>
-                </h2>
-                <div class="section-content">
-                    <article class="post">
-                        <img src="images/project-1.jpg" alt="sable">
-                        <h1>Cinéphoria</h1>
-                        <p class="section-content_post">C'est une application de site de cinéma.
-                        </p>
-                        <p class="section-content_post">Symfony/React/Docker/Ci-Cd
-                        </p>
-                        <footer>
-                            <li class="nav-item"><a href="https://cinephora.fr/" class="nav-link" target="_blank">Site</a></li> 
-                        </footer>
-                    </article>
-                    <article class="post">
-                        <img src="images/project-2.jpg" alt="sable">
-                        <h1>
-                            shelyCare</h1>
-                        <p class="section-content_post">C'est une application de vente en ligne .
-                        </p>
-                        <p class="section-content_post">Symfony/React/Docker/Ci-Cd
-                        </p>
-                        <footer>
-                        <li class="nav-item">
-                          <a href="https://shelycare.com/" class="nav-link" target="_blank">Site</a>
-                        </li>
-                        </footer>
-                    </article>
-                    <article class="post">
-                        <img src="images/project-3.jpg" alt="sable">
-                        <h1>MotorBike</h1>
-                        <p class="section-content_post">C'est une application de présentation de puissantes Motos 
-                        </p>
-                        <p class="section-content_post">Symfony
-                        </p>
-                        <footer>
-                            <li class="nav-item"><a href="https://cinephora.fr/" class="nav-link" target="_blank">Démo</a></li> 
-                        </footer>
-                    </article>
-                    </div>
+    <section id="work" class="page-section">
+      <div class="inner">
+        <h2 class="section-title"><span>Mes projets</span></h2>
 
-                    <div class="section-content">
-                    <article class="post">
-                        <img src="images/project-4.jpg" alt="sable">
-                        <h1>Blogix</h1>
-                        <p class="section-content_post"> Petit projet de Blog  Post-Comment .
-                        </p>
-                        <p class="section-content_post">Symfony
-                        </p>
-                        <footer>
-                            <a href="project4.html" class="more-button">Demo</a>
-                        </footer>
-                    </article>
-                    <article class="post">
-                        <img src="images/project-5.jpg" alt="sable">
-                        <h1>Drag and Drop</h1>
-                        <p class="section-content_post">Petit projet Faire Glisser et Déposer  .
-                        </p>
-                        <p class="section-content_post">Javascript
-                        </p>
-                        <footer>
-                            <a href="https://ahlammamoun.github.io/drag-n-drop/" class="more-button">Site</a>
-                        </footer>
-                    </article>
-                    <article class="post">
-                        <img src="images/project-6.jpg" alt="sable">
-                        <h1>GoTour</h1>
-                        <p class="section-content_post">Application de génération de tournée .
-                        </p>
-                        <p class="section-content_post">Symfony
-                        </p>
-                        <footer>
-                            <a href="project6.html" class="more-button">Demo</a>
-                        </footer>
-                    </article>
-                </div>
-                <div class="section-content">
-                    <article class="post">
-                        <img src="images/project-7.jpg" alt="sable">
-                        <h1>Menu resto</h1>
-                        <p class="section-content_post"> Petit projet j.s dynamique.
-                        </p>
-                        <p class="section-content_post">Javascript
-                        </p>
-                        <footer>
-                            <a href="https://ahlammamoun.github.io/menu-js-dynamique/" class="more-button">Site</a>
-                        </footer>
-                    </article>
-                    <article class="post">
-                        <img src="images/project-8.jpg" alt="sable">
-                        <h1>Form j.s</h1>
-                        <p class="section-content_post">Petit projet Formulaire j.s  .
-                        </p>
-                        <p class="section-content_post">Javascript
-                        </p>
-                        <footer>
-                            <a href="https://ahlammamoun.github.io/Form-js/" class="more-button">Site</a>
-                        </footer>
-                    </article>
-                    <article class="post">
-                        <img src="images/project-9.jpg" alt="sable">
-                        <h1>Team players</h1>
-                        <p class="section-content_post">petit projet animations j.s.
-                        </p>
-                        <p class="section-content_post">Javascript
-                        </p>
-                        <footer>
-                            <a href="https://ahlammamoun.github.io/Make-Your-Team/" class="more-button">Site</a>
-                        </footer>
-                    </article>
-                </div>
-                </div>
-            </section>
+        <div class="project-grid">
+          <!-- Exemple de carte projet -->
+          <div class="project-card">
+            <img src="images/project-1.jpg" alt="Cinéphoria" />
+            <h3>Cinéphoria</h3>
+            <p>Application de site de cinéma<br><strong>Symfony / React / Docker / CI-CD</strong></p>
+            <a href="https://cinephora.fr/" target="_blank" class="btn">Voir le site</a>
+            <a href="project1.html" class="btn btn-secondary">Détails</a>
+          </div>
 
-</div>
+          <div class="project-card">
+            <img src="images/project-2.jpg" alt="ShelyCare" />
+            <h3>ShelyCare</h3>
+            <p>Application de vente en ligne<br><strong>Symfony / React / Docker / CI-CD</strong></p>
+            <a href="https://shelycare.com/" target="_blank" class="btn">Voir le site</a>
+            <a href="project2.html" class="btn btn-secondary">Détails</a>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project-3.jpg" alt="MotorBike" />
+            <h3>MotorBike</h3>
+            <p>Présentation de motos puissantes<br><strong>Symfony / Twig</strong></p>
+            <a href="https://www.youtube.com/watch?v=dOq2r1LSCJQ/" target="_blank" class="btn">Démo</a>
+            <a href="project3.html" class="btn btn-secondary">Détails</a>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project-4.jpg" alt="Blogix" />
+            <h3>Blogix</h3>
+            <p>Mini blog avec posts et commentaires<br><strong>Symfony / Twig</strong></p>
+            <a href="project4.html" class="btn">Démo</a>
+            <a href="project4.html" class="btn btn-secondary">Détails</a>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project-5.jpg" alt="Drag and Drop" />
+            <h3>Drag and Drop</h3>
+            <p>Projet de glisser-déposer<br><strong>JavaScript</strong></p>
+            <a href="https://ahlammamoun.github.io/drag-n-drop/" target="_blank" class="btn">Voir le site</a>
+            <a href="project5.html" class="btn btn-secondary">Détails</a>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project-6.jpg" alt="GoTour" />
+            <h3>GoTour</h3>
+            <p>Application de génération de tournée<br><strong>Symfony / Twig</strong></p>
+            <a href="project6.html" class="btn">Démo</a>
+            <a href="project6.html" class="btn btn-secondary">Détails</a>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project-7.jpg" alt="Menu Resto" />
+            <h3>Menu Resto</h3>
+            <p>Menu JS dynamique<br><strong>JavaScript</strong></p>
+            <a href="https://ahlammamoun.github.io/menu-js-dynamique/" target="_blank" class="btn">Voir le site</a>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project-8.jpg" alt="Form JS" />
+            <h3>Form JS</h3>
+            <p>Formulaire interactif<br><strong>JavaScript</strong></p>
+            <a href="https://ahlammamoun.github.io/Form-js/" target="_blank" class="btn">Voir le site</a>
+          </div>
+
+          <div class="project-card">
+            <img src="images/project-9.jpg" alt="Team Players" />
+            <h3>Team Players</h3>
+            <p>Animations JS<br><strong>JavaScript</strong></p>
+            <a href="https://ahlammamoun.github.io/Make-Your-Team/" target="_blank" class="btn">Voir le site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="page-footer">
+      &copy; Ahlam Mamoun - Tous droits réservés
+    </footer>
+  </div>
 </body>
 
 </html>
