@@ -139,17 +139,15 @@ img {
 #bio th {
   background-color: #f0f0f0;
 }
-td {
-  width: 120px; /* ou une largeur adaptée à ton design */
-}
+
 .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 {
   height: 10px;
   border-radius: 5px;
   background-color: var(--main-color);
 }
 
-.l1 { width: 90%; }
-.l2 { width: 90%; }
+.l1 { width: 100%; }
+.l2 { width: 100%; }
 .l3 { width: 90%; }
 .l4 { width: 90%; }
 .l5 { width: 83%; }
