@@ -1,167 +1,442 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/style.css?v=2">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css?v=2">
 </head>
-
 <body>
-    <div id="page-wrapper">
+  <div id="page-wrapper">
 
-        <header id="page-header-first">
+    <header id="page-header-first">
+      <nav id="main-nav" title="main-nav">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
 
-            <nav id="main-nav" title="main-nav">
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
+          <li class="nav-item"><a href="#intro" class="nav-link">A propos</a></li>
+          <li class="nav-item"><a href="#bio" class="nav-link">Bio</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projets</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Me contacter</a></li>
+        </ul>
+      </nav>
 
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="#intro" class="nav-link">A propos</a></li>
-                    <li class="nav-item"><a href="#bio" class="nav-link">Bio</a></li>
-                    <li class="nav-item"><a href="projects.html" class="nav-link">Projets</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Me contacter</a></li>
+      <h1>
+        <span>Bonjour,</span> <span>Je m'appelle Ahlam,</span><br>
+        <span class="scd">Développeuse PHP/Symfony/React</span>
+      </h1>
+      <p><span></span></p>
+    </header>
+
+    <section id="intro" class="page-section">
+      <div class="inner">
+        <h2 class="section-title"><span>A propos</span></h2>
+        <div class="section-content">
+          <p class="text-up">
+            Mon portfolio est la représentation de mes compétences en programmation. Les travaux présentés
+            en sont un exemple pratique.
+          </p>
+        </div>
+        <div class="actions">
+          <a href="projects.html" class="action-button action-button-plain">PROJETS</a> |
+          <a href="#contact" class="action-button action-button-line">ME CONTACTER</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION STRUCTURE ===== -->
+    <section id="structure" class="page-section">
+      <div class="inner">
+        <h2 class="section-title"><span>Structure des projets</span></h2>
+
+        <div class="structure-grid">
+          <!-- Colonne gauche : arborescence -->
+          <ul class="tree play-on-scroll" id="projectTree">
+            <li class="dir">
+              <details open>
+                <summary><span>.github/</span></summary>
+                <ul>
+                  <li class="dir">
+                    <details open>
+                      <summary><span>workflows/</span></summary>
+                      <ul>
+                        <li class="file"><span>deploy.yml</span></li>
+                      </ul>
+                    </details>
+                  </li>
                 </ul>
-            </nav>
+              </details>
+            </li>
 
-            <h1>
-                <span>Bonjour,</span> <span>Je m'appelle Ahlam,</span><br>
-                <span class="scd">Développeuse PHP/Symfony/React</span>
-            </h1>
-            <p><span></span></p>
+            <li class="dir">
+              <details open>
+                <summary><span>frontend/</span></summary>
+                <ul>
+                  <li class="dir"><span>src/</span></li>
+                  <li class="dir"><span>public/</span></li>
+                  <li class="file"><span>DockerFile.yml</span></li>
+                </ul>
+              </details>
+            </li>
 
-            <!--
-      <img class="my-picture" src="images/image1.png" alt="Portrait de Ahlam Mamoun">
-      -->
+            <li class="dir">
+              <details open>
+                <summary><span>backend/</span></summary>
+                <ul>
+                  <li class="dir"><span>config/</span></li>
+                  <li class="dir"><span>src/</span></li>
+                  <li class="file"><span>DockerFile.yml</span></li>
+                </ul>
+              </details>
+            </li>
 
-        </header>
+            <li class="dir">
+              <details>
+                <summary><span>nginx/</span></summary>
+                <ul>
+                  <li class="file"><span>default.conf</span></li>
+                </ul>
+              </details>
+            </li>
 
-        <section id="intro" class="page-section">
-            <div class="inner">
-                <h2 class="section-title"><span>A propos</span></h2>
-                <div class="section-content">
-                    <p class="text-up">
-                        Mon portfolio est la représentation de mes compétences en programmation. Les travaux présentés
-                        en sont un exemple pratique.
-                    </p>
-                </div>
-                <div class="actions">
-                    <a href="projects.html" class="action-button action-button-plain">PROJETS</a> |
-                    <a href="#contact" class="action-button action-button-line">ME CONTACTER</a>
-                </div>
+            <li class="dir"><span>vendor/</span></li>
+
+            <li class="file"><span>.dockerignore</span></li>
+            <li class="file"><span>.gitignore</span></li>
+            <li class="file"><span>deploy-final.txt</span></li>
+            <li class="file"><span>docker-compose.yml</span></li>
+            <li class="file"><span>README.md</span></li>
+          </ul>
+
+          <!-- Colonne droite : panneau de commandes (selects) -->
+          <div class="cli-panel">
+            <h3 class="cli-title">Commandes rapides</h3>
+
+            <div class="cli-controls">
+              <div class="field">
+                <label for="cmd-category">Technologie</label>
+                <select id="cmd-category">
+                  <option value="react">React (Vite)</option>
+                  <option value="symfony">Symfony + Doctrine</option>
+                  <option value="doctrine">Doctrine (entités/migrations)</option>
+                  <option value="mysql-docker">MySQL (Docker)</option>
+                  <option value="docker-install">Docker (installation)</option>
+                  <option value="docker-compose">docker-compose.yml (exemple)</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="cmd-variant">Variante</label>
+                <select id="cmd-variant"></select>
+              </div>
+
+              <button class="btn copy-btn" id="copyCmd" type="button">Copier</button>
             </div>
-        </section>
 
-        <section id="bio" class="page-section">
-            <div class="inner">
-                <h2 class="section-title"><span>Bio</span></h2>
-                <div class="section-content">
+            <pre class="cli-output"><code id="cmdOutput"></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== /SECTION STRUCTURE ===== -->
 
-                    <h3 class="text-bio">
-                        Je suis une développeuse orientée Back-End. J'aime beaucoup contribuer à une application en
-                        construisant des mécanismes, des fonctionnalités, en sécurisant et en faisant circuler les
-                        données. Factoriser le code tout en le rendant communicant, c’est comme assembler les pièces
-                        d’un puzzle sans qu’elles ne se touchent.<br>
-                        Voici une évaluation évolutive de mes compétences.
-                    </h3>
+    <section id="bio" class="page-section">
+      <div class="inner">
+        <h2 class="section-title"><span>Bio</span></h2>
+        <div class="section-content">
 
-                    <table>
-                        <tr>
-                            <th colspan="2">Développement</th>
-                            <th colspan="2">Technique</th>
-                        </tr>
-                        <tr>
-                            <th>Langage</th>
-                            <th>Note</th>
-                            <th>Framework & Environnement</th>
-                            <th>Note</th>
-                        </tr>
-                        <tr>
-                            <td>Css</td>
-                            <td>
-                                <div class="l1"></div>
-                            </td>
-                            <td>
-                                Ci-Cd
-                            </td>
-                            <td>
-                                <div class="l2"></div>
-                            </td>
+          <h3 class="text-bio">
+            Je suis une développeuse orientée Back-End. J'aime beaucoup contribuer à une application en
+            construisant des mécanismes, des fonctionnalités, en sécurisant et en faisant circuler les
+            données. Factoriser le code tout en le rendant communicant, c’est comme assembler les pièces
+            d’un puzzle sans qu’elles ne se touchent.<br>
+            Voici une évaluation évolutive de mes compétences.
+          </h3>
 
-                        </tr>
-                        <tr>
-                            <td>Mysql</td>
-                            <td>
-                                <div class="l3"></div>
-                            </td>
-                            <td>Docker</td>
-                            <td>
-                                <div class="l4"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>PHP</td>
-                            <td>
-                                <div class="l5"></div>
-                            </td>
-                            <td>Symfony</td>
-                            <td>
-                                <div class="l6"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                            <td>
-                                <div class="l7"></div>
-                            </td>
-                            <td>React.js</td>
-                            <td>
-                                <div class="l8"></div>
-                            </td>
-                        </tr>
-                    </table>
+          <table>
+            <tr>
+              <th colspan="2">Développement</th>
+              <th colspan="2">Technique</th>
+            </tr>
+            <tr>
+              <th>Langage</th>
+              <th>Note</th>
+              <th>Framework & Environnement</th>
+              <th>Note</th>
+            </tr>
+            <tr>
+              <td>Css</td>
+              <td><div class="l1"></div></td>
+              <td>Ci-Cd</td>
+              <td><div class="l2"></div></td>
+            </tr>
+            <tr>
+              <td>Mysql</td>
+              <td><div class="l3"></div></td>
+              <td>Docker</td>
+              <td><div class="l4"></div></td>
+            </tr>
+            <tr>
+              <td>PHP</td>
+              <td><div class="l5"></div></td>
+              <td>Symfony</td>
+              <td><div class="l6"></div></td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td><div class="l7"></div></td>
+              <td>React.js</td>
+              <td><div class="l8"></div></td>
+            </tr>
+          </table>
 
-                    <h3 class="text-bio">
-                        A propos de moi et de mes soft skills : je suis une développeuse passionnée, travailleuse
-                        acharnée, avec un fort esprit d'équipe. Je suis une personne enjouée et je préfère
-                        définitivement me concentrer sur le positif, même si "all is not rosy".
-                    </h3>
+          <h3 class="text-bio">
+            A propos de moi et de mes soft skills : je suis une développeuse passionnée, travailleuse
+            acharnée, avec un fort esprit d'équipe. Je suis une personne enjouée et je préfère
+            définitivement me concentrer sur le positif, même si "all is not rosy".
+          </h3>
 
-                </div>
-            </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <section id="contact" class="page-section">
-            <div class="inner">
-                <h2 class="section-title"><span>Contact</span></h2>
-                <div class="section-content">
-                    <span id="msg"></span>
-                    <div class="social-icons">
-                        <p class="footer">mestar.ale@gmail.com</p>
-                        <p class="footer">06.13.46.93.40</p>
-                        <a class="footer" href="https://www.linkedin.com/in/ahlam-mamoun/">LinkedIn</a><br>
-                        <a href="images/my-cv.pdf" download class="btn bnt2">Télécharger mon CV</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="contact" class="page-section">
+      <div class="inner">
+        <h2 class="section-title"><span>Contact</span></h2>
+        <div class="section-content">
+          <span id="msg"></span>
+          <div class="social-icons">
+            <p class="footer">mestar.ale@gmail.com</p>
+            <p class="footer">06.13.46.93.40</p>
+            <a class="footer" href="https://www.linkedin.com/in/ahlam-mamoun/">LinkedIn</a><br>
+            <a href="images/my-cv.pdf" download class="btn bnt2">Télécharger mon CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <footer id="page-footer">
-            &copy; Ahlam Mamoun — Avec du travail, encore mieux <i class="fas fa-handshake"></i>
-        </footer>
-    </div>
+    <footer id="page-footer">
+      &copy; Ahlam Mamoun — Avec du travail, encore mieux <i class="fas fa-handshake"></i>
+    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="js/app.js?v=1"></script>
+  </div><!-- /#page-wrapper -->
 
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="js/app.js?v=1"></script>
+
+  <!-- Inline JS pour l'arborescence + selects -->
+  <script>
+  // Animation arborescence au scroll
+  (function(){
+    const tree = document.getElementById('projectTree');
+    if (!tree) return;
+    const items = Array.from(tree.querySelectorAll('li'));
+    items.forEach((li, i) => li.style.setProperty('--d', (i * 0.08) + 's'));
+    const play = () => tree.classList.add('play');
+    if ('IntersectionObserver' in window){
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => { if (e.isIntersecting){ play(); obs.unobserve(tree);} });
+      }, { threshold: 0.25 });
+      io.observe(tree);
+    } else { play(); }
+  })();
+
+  // Panneau commandes : catégories/variantes + copier
+  (function(){
+    const categoryEl = document.getElementById('cmd-category');
+    const variantEl  = document.getElementById('cmd-variant');
+    const outEl      = document.getElementById('cmdOutput');
+    const copyBtn    = document.getElementById('copyCmd');
+    if (!categoryEl || !variantEl || !outEl || !copyBtn) return;
+
+    const CMDS = {
+      react: {
+        npm: `# Prérequis : Node.js + npm
+npm create vite@latest frontend -- --template react
+cd frontend
+npm install
+npm run dev`,
+        yarn: `# Avec yarn
+npm create vite@latest frontend -- --template react
+cd frontend
+yarn
+yarn dev`,
+        pnpm: `# Avec pnpm
+npm create vite@latest frontend -- --template react
+cd frontend
+pnpm i
+pnpm dev`
+      },
+      symfony: {
+        webapp: `# Prérequis : PHP, Composer, (optionnel) Symfony CLI
+symfony new backend --webapp
+cd backend
+composer require symfony/orm-pack
+composer require --dev symfony/maker-bundle
+
+# Dans .env (exemple MySQL Docker)
+# DATABASE_URL="mysql://root:root@127.0.0.1:3306/app?serverVersion=8.0&charset=utf8mb4"
+
+php bin/console doctrine:database:create
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+
+symfony server:start -d`,
+        skeleton: `# Variante skeleton
+composer create-project symfony/skeleton backend
+cd backend
+composer require symfony/framework-bundle twig annotations
+composer require symfony/orm-pack
+composer require --dev symfony/maker-bundle`
+      },
+      doctrine: {
+        entity: `# Créer une entité
+php bin/console make:entity
+
+# Générer et appliquer la migration
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+
+# (Option) Charger des fixtures
+composer require --dev orm-fixtures
+php bin/console doctrine:fixtures:load`,
+        dbtools: `# (Re)créer la base localement
+php bin/console doctrine:database:drop --force
+php bin/console doctrine:database:create
+php bin/console doctrine:schema:update --force`
+      },
+      "mysql-docker": {
+        mysql8: `# MySQL 8 (x86_64)
+docker run --name mysql \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=app \
+  -p 3306:3306 -d mysql:8.0
+
+# Doctrine .env
+# DATABASE_URL="mysql://root:root@127.0.0.1:3306/app?serverVersion=8.0&charset=utf8mb4"`,
+        mysql8_arm: `# MySQL 8 (ARM) - image compatible
+docker run --name mysql \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=app \
+  -p 3306:3306 -d mysql:8.0-oracle`,
+        mariadb: `# MariaDB
+docker run --name mariadb \
+  -e MARIADB_ROOT_PASSWORD=root \
+  -e MARIADB_DATABASE=app \
+  -p 3306:3306 -d mariadb:11
+
+# Doctrine .env
+# DATABASE_URL="mysql://root:root@127.0.0.1:3306/app?serverVersion=mariadb-11.0&charset=utf8mb4"`
+      },
+      "docker-install": {
+        ubuntu: `# Ubuntu/WSL
+sudo apt update
+sudo apt install -y docker.io docker-compose-plugin
+sudo usermod -aG docker $USER   # re-ouvre ta session
+docker --version
+docker compose version`,
+        wsl: `# Installer WSL + Ubuntu (Windows)
+wsl --install -d Ubuntu
+# Puis installe Docker Desktop et active l'intégration WSL`
+      },
+      "docker-compose": {
+        stack: `# docker-compose.yml (PHP-FPM + Nginx + MySQL)
+version: "3.8"
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app
+    ports: ["3306:3306"]
+    volumes: ["db_data:/var/lib/mysql"]
+
+  php:
+    image: php:8.2-fpm
+    volumes:
+      - ./backend:/var/www/html
+
+  nginx:
+    image: nginx:alpine
+    ports: ["8080:80"]
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./backend:/var/www/html:ro
+    depends_on: [php]
+
+volumes:
+  db_data: {}`
+      }
+    };
+
+    const VARIANTS = {
+      react: [
+        {value:'npm',  label:'npm'},
+        {value:'yarn', label:'yarn'},
+        {value:'pnpm', label:'pnpm'},
+      ],
+      symfony: [
+        {value:'webapp',   label:'Webapp (recommandé)'},
+        {value:'skeleton', label:'Skeleton'},
+      ],
+      doctrine: [
+        {value:'entity',  label:'Entité + migrations'},
+        {value:'dbtools', label:'Outils base (drop/create/schema)'},
+      ],
+      "mysql-docker": [
+        {value:'mysql8',     label:'MySQL 8 (x86_64)'},
+        {value:'mysql8_arm', label:'MySQL 8 (ARM)'},
+        {value:'mariadb',    label:'MariaDB 11'},
+      ],
+      "docker-install": [
+        {value:'ubuntu', label:'Ubuntu / WSL Ubuntu'},
+        {value:'wsl',    label:'Windows + WSL (note)'},
+      ],
+      "docker-compose": [
+        {value:'stack',  label:'Stack PHP + Nginx + MySQL'},
+      ]
+    };
+
+    function fillVariants(cat){
+      const opts = VARIANTS[cat] || [];
+      variantEl.innerHTML = opts.map(o => `<option value="${o.value}">${o.label}</option>`).join('');
+    }
+    function render(cat, variant){
+      const block = CMDS?.[cat]?.[variant] || '# (aucune commande)';
+      outEl.textContent = block;
+    }
+
+    // init
+    fillVariants(categoryEl.value);
+    render(categoryEl.value, VARIANTS[categoryEl.value][0].value);
+
+    categoryEl.addEventListener('change', ()=>{
+      fillVariants(categoryEl.value);
+      render(categoryEl.value, VARIANTS[categoryEl.value][0].value);
+    });
+    variantEl.addEventListener('change', ()=>{
+      render(categoryEl.value, variantEl.value);
+    });
+
+    copyBtn.addEventListener('click', async (e)=>{
+      try {
+        await navigator.clipboard.writeText(outEl.textContent);
+        e.currentTarget.textContent = 'Copié !';
+        setTimeout(()=> e.currentTarget.textContent = 'Copier', 1200);
+      } catch {
+        e.currentTarget.textContent = 'Impossible de copier';
+        setTimeout(()=> e.currentTarget.textContent = 'Copier', 1500);
+      }
+    });
+  })();
+  </script>
 </body>
-
 </html>

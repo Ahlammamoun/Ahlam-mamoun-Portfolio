@@ -29,6 +29,9 @@ document.querySelectorAll(".nav-link").forEach(n =>
   })
 );
 
+
+
+
 // Animations
 window.addEventListener('load', () => {
   const TL = gsap.timeline({ paused: true });

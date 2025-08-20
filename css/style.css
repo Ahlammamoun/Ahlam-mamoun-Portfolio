@@ -143,6 +143,103 @@ a.btn:hover{ background:#e94358; }
 .hamburger.active .bar:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
 
 
+/* ====== Structure : grille 2 colonnes ====== */
+.structure-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr; /* 2 colonnes */
+  gap:24px;
+  align-items:start;
+}
+@media (max-width:900px){
+  .structure-grid{ grid-template-columns:1fr; }
+}
+
+/* ====== Arborescence (animation sans chevauchement) ====== */
+.tree, .tree ul { list-style:none; margin:0; padding-left:0; }
+.tree { --line: rgba(0,0,0,.12); --muted:#6b7280; --folder:#ffb020; --file:#60a5fa;
+  background:#fff; border:1px solid #eee; border-radius:12px;
+  padding:16px 18px; box-shadow:0 4px 12px rgba(0,0,0,.04);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.tree > li, .tree details > ul > li { margin:.15rem 0; }
+.tree li{ position:relative; padding-left:1.4rem; }
+.tree li::before{ content:""; position:absolute; left:.4rem; top:0; bottom:-.2rem; width:1px; background:var(--line);
+  transform:scaleY(0); transform-origin:top; }
+.tree li::after{ content:""; position:absolute; left:.4rem; top:.95em; width:.9rem; height:1px; background:var(--line);
+  transform:scaleX(0); transform-origin:left; }
+.tree .dir > span, .tree summary > span{ position:relative; padding-left:1.1rem; font-weight:600; color:#111827; }
+.tree .file > span{ position:relative; padding-left:1.1rem; color:#1f2937; }
+.tree .dir > span::before, .tree summary > span::before{ content:"📁"; position:absolute; left:0; top:0; transform:translateY(2px); color:var(--folder); }
+.tree .file > span::before{ content:"📄"; position:absolute; left:0; top:0; transform:translateY(2px); color:var(--file); }
+.tree details{ margin:.1rem 0; }
+.tree summary{ list-style:none; cursor:pointer; user-select:none; outline:none; }
+.tree summary::-webkit-details-marker{ display:none; }
+.tree summary::before{ content:"▸"; display:inline-block; margin-right:.35rem; color:var(--muted); transition:transform .2s ease; }
+.tree details[open] > summary::before{ transform:rotate(90deg); }
+.tree li > span, .tree summary{ opacity:0; transform:translateY(3px); }
+.tree.play li::before{ animation:drawY .45s ease-out forwards var(--d,0s); }
+.tree.play li::after{  animation:drawX .45s ease-out forwards calc(var(--d,0s) + .12s); }
+.tree.play li > span,
+.tree.play summary{ animation:fadeUp .32s ease-out forwards calc(var(--d,0s) + .22s); }
+@keyframes drawY{ to{ transform:scaleY(1); } }
+@keyframes drawX{ to{ transform:scaleX(1); } }
+@keyframes fadeUp{ to{ opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce){
+  .tree li::before, .tree li::after{ transform:none !important; animation:none !important; }
+  .tree li > span, .tree summary{ opacity:1 !important; transform:none !important; }
+}
+
+/* ====== Panneau commandes (selects) ====== */
+.cli-panel{
+  background:#fff; border:1px solid #eee; border-radius:12px;
+  padding:16px; box-shadow:0 4px 12px rgba(0,0,0,.04);
+}
+.cli-title{ margin:0 0 10px; font-size:1.1rem; color:#0f172a; }
+.cli-controls{
+  display:grid; grid-template-columns: 1fr 1fr auto;
+  gap:12px; align-items:end; margin-bottom:12px;
+}
+.cli-controls .field{ display:flex; flex-direction:column; gap:6px; }
+.cli-controls label{ font-size:.9rem; color:#374151; }
+.cli-controls select{
+  appearance:none; border:1px solid #e5e7eb; border-radius:10px;
+  padding:10px 12px; background:#fff; color:#111827;
+}
+.copy-btn{ height:42px; align-self:end; }
+.cli-output{
+  margin:0; padding:12px; border-radius:10px; overflow:auto;
+  background:#0f172a; color:#e5e7eb; font-size:.92rem; line-height:1.45;
+}
+.cli-output code{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  white-space: pre;
+}
+@media (max-width:900px){
+  .cli-controls{ grid-template-columns:1fr; }
+  .copy-btn{ width:100%; }
+}
+
+/* ====== (option) Cartes projets : miniature uniforme ====== */
+.project-card > .thumb{ aspect-ratio:16/9; background:#f6f7f9; border:1px solid #ddd; border-radius:8px; overflow:hidden; display:grid; place-items:center; margin-bottom:1em; }
+.project-card > .thumb > img{ width:100%; height:100%; object-fit:contain; display:block; border:0; background:transparent; }
+
+@media (max-width:900px){
+  .structure-grid{ grid-template-columns:1fr; }
+}
+
+@keyframes drawY { to { transform: scaleY(1); } }
+@keyframes drawX { to { transform: scaleX(1); } }
+@keyframes fadeUp{ to { opacity:1; transform:none; } }
+
+/* réduire les animations si demandé */
+@media (prefers-reduced-motion: reduce){
+  .tree li::before, .tree li::after { transform:none !important; animation:none !important; }
+  .tree li > span, .tree summary { opacity:1 !important; transform:none !important; }
+}
+
+
+
+
 /* ===== SPIN & DROP on enter ===== */
 @keyframes spin-drop-in {
   0% {
