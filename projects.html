@@ -16,11 +16,12 @@
           <li><a href="index.html#contact" class="nav-link">Me contacter</a></li>
         </ul>
         <!-- Menu burger -->
-        <div class="hamburger">
+        <div class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" role="button" tabindex="0">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
+
       </nav>
     </header>
 
@@ -32,7 +33,9 @@
         <div class="project-grid">
           <!-- Exemple de carte projet -->
           <div class="project-card">
-            <img src="images/project-1.jpg" alt="Cinéphoria" />
+            <div class="thumb">
+              <img src="images/project-1.jpg" alt="Cinéphoria" />
+            </div>
             <h3>Cinéphoria</h3>
             <p>Application de site de cinéma<br><strong>Symfony / React / Docker / CI-CD</strong></p>
             <a href="https://cinephora.fr/" target="_blank" class="btn">Voir le site</a>
@@ -40,7 +43,9 @@
           </div>
 
           <div class="project-card">
-            <img src="images/project-2.jpg" alt="ShelyCare" />
+            <div class="thumb">
+              <img src="images/project-2.jpg" alt="ShelyCare" />
+            </div>
             <h3>ShelyCare</h3>
             <p>Application de vente en ligne<br><strong>Symfony / React / Docker / CI-CD</strong></p>
             <a href="https://shelycare.com/" target="_blank" class="btn">Voir le site</a>
@@ -48,7 +53,9 @@
           </div>
 
           <div class="project-card">
-            <img src="images/project-3.jpg" alt="MotorBike" />
+            <div class="thumb">
+              <img src="images/project-3.jpg" alt="MotorBike" />
+            </div>
             <h3>MotorBike</h3>
             <p>Présentation de motos puissantes<br><strong>Symfony / Twig</strong></p>
             <a href="https://www.youtube.com/watch?v=dOq2r1LSCJQ/" target="_blank" class="btn">Démo</a>
@@ -56,7 +63,9 @@
           </div>
 
           <div class="project-card">
-            <img src="images/project-4.jpg" alt="Blogix" />
+            <div class="thumb">
+              <img src="images/project-4.jpg" alt="Blogix" />
+            </div>
             <h3>Blogix</h3>
             <p>Mini blog avec posts et commentaires<br><strong>Symfony / Twig</strong></p>
             <a href="project4.html" class="btn">Démo</a>
@@ -64,7 +73,9 @@
           </div>
 
           <div class="project-card">
-            <img src="images/project-5.jpg" alt="Drag and Drop" />
+            <div class="thumb">
+              <img src="images/project-5.jpg" alt="Drag and Drop" />
+            </div>
             <h3>Drag and Drop</h3>
             <p>Projet de glisser-déposer<br><strong>JavaScript</strong></p>
             <a href="https://ahlammamoun.github.io/drag-n-drop/" target="_blank" class="btn">Voir le site</a>
@@ -72,7 +83,9 @@
           </div>
 
           <div class="project-card">
-            <img src="images/project-6.jpg" alt="GoTour" />
+            <div class="thumb">
+              <img src="images/project-6.jpg" alt="GoTour" />
+            </div>
             <h3>GoTour</h3>
             <p>Application de génération de tournée<br><strong>Symfony / Twig</strong></p>
             <a href="project6.html" class="btn">Démo</a>
@@ -80,28 +93,36 @@
           </div>
 
           <div class="project-card">
-            <img src="images/project-7.jpg" alt="Menu Resto" />
+            <div class="thumb">
+              <img src="images/project-7.jpg" alt="Menu Resto" />
+            </div>
             <h3>Menu Resto</h3>
             <p>Menu JS dynamique<br><strong>JavaScript</strong></p>
             <a href="https://ahlammamoun.github.io/menu-js-dynamique/" target="_blank" class="btn">Voir le site</a>
           </div>
 
           <div class="project-card">
-            <img src="images/project-8.jpg" alt="Form JS" />
+            <div class="thumb">
+              <img src="images/project-8.jpg" alt="Form JS" />
+            </div>
             <h3>Form JS</h3>
             <p>Formulaire interactif<br><strong>JavaScript</strong></p>
             <a href="https://ahlammamoun.github.io/Form-js/" target="_blank" class="btn">Voir le site</a>
           </div>
 
           <div class="project-card">
-            <img src="images/project-9.jpg" alt="Team Players" />
+            <div class="thumb">
+              <img src="images/project-9.jpg" alt="Team Players" />
+            </div>
             <h3>Team Players</h3>
             <p>Animations JS<br><strong>JavaScript</strong></p>
             <a href="https://ahlammamoun.github.io/Make-Your-Team/" target="_blank" class="btn">Voir le site</a>
           </div>
 
-             <div class="project-card">
-            <img src="images/project-10.jpg" alt="Ball Game" />
+          <div class="project-card">
+            <div class="thumb">
+              <img src="images/project-10.jpg" alt="Ball Game" />
+            </div>
             <h3>Game Ball</h3>
             <p>Animations JS<br><strong>JavaScript</strong></p>
             <a href="https://ahlammamoun.github.io/Bing-Bang/" target="_blank" class="btn">Voir le site</a>
@@ -115,6 +136,8 @@
       &copy; Ahlam Mamoun - Tous droits réservés
     </footer>
   </div>
+  <script src="js/animations.js" defer></script>
+
 </body>
 
 </html>
