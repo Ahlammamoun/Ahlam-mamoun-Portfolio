@@ -6,6 +6,13 @@
   <title>Mes projets | Portfolio Ahlam</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.classList.add('is-in');
+    });
+  });
+</script>
 
 <body>
   <div id="page-wrapper">
