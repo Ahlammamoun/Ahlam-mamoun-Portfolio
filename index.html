@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css?v=2">
 </head>
+
 <body>
   <div id="page-wrapper">
 
@@ -171,28 +173,44 @@
               <th>Note</th>
             </tr>
             <tr>
-              <td>Css</td>
-              <td><div class="l1"></div></td>
-              <td>Ci-Cd</td>
-              <td><div class="l2"></div></td>
+              <td data-label="Langage">Css</td>
+              <td data-label="Note">
+                <div class="l1"></div>
+              </td>
+              <td data-label="Framework & Environnement">Ci-Cd</td>
+              <td data-label="Note">
+                <div class="l2"></div>
+              </td>
             </tr>
             <tr>
-              <td>Mysql</td>
-              <td><div class="l3"></div></td>
-              <td>Docker</td>
-              <td><div class="l4"></div></td>
+              <td data-label="Langage">Mysql</td>
+              <td data-label="Note">
+                <div class="l3"></div>
+              </td>
+              <td data-label="Framework & Environnement">Docker</td>
+              <td data-label="Note">
+                <div class="l4"></div>
+              </td>
             </tr>
             <tr>
-              <td>PHP</td>
-              <td><div class="l5"></div></td>
-              <td>Symfony</td>
-              <td><div class="l6"></div></td>
+              <td data-label="Langage">PHP</td>
+              <td data-label="Note">
+                <div class="l5"></div>
+              </td>
+              <td data-label="Framework & Environnement">Symfony</td>
+              <td data-label="Note">
+                <div class="l6"></div>
+              </td>
             </tr>
             <tr>
-              <td>JavaScript</td>
-              <td><div class="l7"></div></td>
-              <td>React.js</td>
-              <td><div class="l8"></div></td>
+              <td data-label="Langage">JavaScript</td>
+              <td data-label="Note">
+                <div class="l7"></div>
+              </td>
+              <td data-label="Framework & Environnement">React.js</td>
+              <td data-label="Note">
+                <div class="l8"></div>
+              </td>
             </tr>
           </table>
 
@@ -205,6 +223,7 @@
         </div>
       </div>
     </section>
+
 
     <section id="contact" class="page-section">
       <div class="inner">
@@ -234,49 +253,49 @@
 
   <!-- Inline JS pour l'arborescence + selects -->
   <script>
-  // Animation arborescence au scroll
-  (function(){
-    const tree = document.getElementById('projectTree');
-    if (!tree) return;
-    const items = Array.from(tree.querySelectorAll('li'));
-    items.forEach((li, i) => li.style.setProperty('--d', (i * 0.08) + 's'));
-    const play = () => tree.classList.add('play');
-    if ('IntersectionObserver' in window){
-      const io = new IntersectionObserver((entries, obs) => {
-        entries.forEach(e => { if (e.isIntersecting){ play(); obs.unobserve(tree);} });
-      }, { threshold: 0.25 });
-      io.observe(tree);
-    } else { play(); }
-  })();
+    // Animation arborescence au scroll
+    (function () {
+      const tree = document.getElementById('projectTree');
+      if (!tree) return;
+      const items = Array.from(tree.querySelectorAll('li'));
+      items.forEach((li, i) => li.style.setProperty('--d', (i * 0.08) + 's'));
+      const play = () => tree.classList.add('play');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries, obs) => {
+          entries.forEach(e => { if (e.isIntersecting) { play(); obs.unobserve(tree); } });
+        }, { threshold: 0.25 });
+        io.observe(tree);
+      } else { play(); }
+    })();
 
-  // Panneau commandes : catégories/variantes + copier
-  (function(){
-    const categoryEl = document.getElementById('cmd-category');
-    const variantEl  = document.getElementById('cmd-variant');
-    const outEl      = document.getElementById('cmdOutput');
-    const copyBtn    = document.getElementById('copyCmd');
-    if (!categoryEl || !variantEl || !outEl || !copyBtn) return;
+    // Panneau commandes : catégories/variantes + copier
+    (function () {
+      const categoryEl = document.getElementById('cmd-category');
+      const variantEl = document.getElementById('cmd-variant');
+      const outEl = document.getElementById('cmdOutput');
+      const copyBtn = document.getElementById('copyCmd');
+      if (!categoryEl || !variantEl || !outEl || !copyBtn) return;
 
-    const CMDS = {
-      react: {
-        npm: `# Prérequis : Node.js + npm
+      const CMDS = {
+        react: {
+          npm: `# Prérequis : Node.js + npm
 npm create vite@latest frontend -- --template react
 cd frontend
 npm install
 npm run dev`,
-        yarn: `# Avec yarn
+          yarn: `# Avec yarn
 npm create vite@latest frontend -- --template react
 cd frontend
 yarn
 yarn dev`,
-        pnpm: `# Avec pnpm
+          pnpm: `# Avec pnpm
 npm create vite@latest frontend -- --template react
 cd frontend
 pnpm i
 pnpm dev`
-      },
-      symfony: {
-        webapp: `# Prérequis : PHP, Composer, (optionnel) Symfony CLI
+        },
+        symfony: {
+          webapp: `# Prérequis : PHP, Composer, (optionnel) Symfony CLI
 symfony new backend --webapp
 cd backend
 composer require symfony/orm-pack
@@ -290,15 +309,15 @@ php bin/console make:migration
 php bin/console doctrine:migrations:migrate
 
 symfony server:start -d`,
-        skeleton: `# Variante skeleton
+          skeleton: `# Variante skeleton
 composer create-project symfony/skeleton backend
 cd backend
 composer require symfony/framework-bundle twig annotations
 composer require symfony/orm-pack
 composer require --dev symfony/maker-bundle`
-      },
-      doctrine: {
-        entity: `# Créer une entité
+        },
+        doctrine: {
+          entity: `# Créer une entité
 php bin/console make:entity
 
 # Générer et appliquer la migration
@@ -308,13 +327,13 @@ php bin/console doctrine:migrations:migrate
 # (Option) Charger des fixtures
 composer require --dev orm-fixtures
 php bin/console doctrine:fixtures:load`,
-        dbtools: `# (Re)créer la base localement
+          dbtools: `# (Re)créer la base localement
 php bin/console doctrine:database:drop --force
 php bin/console doctrine:database:create
 php bin/console doctrine:schema:update --force`
-      },
-      "mysql-docker": {
-        mysql8: `# MySQL 8 (x86_64)
+        },
+        "mysql-docker": {
+          mysql8: `# MySQL 8 (x86_64)
 docker run --name mysql \
   -e MYSQL_ROOT_PASSWORD=root \
   -e MYSQL_DATABASE=app \
@@ -322,12 +341,12 @@ docker run --name mysql \
 
 # Doctrine .env
 # DATABASE_URL="mysql://root:root@127.0.0.1:3306/app?serverVersion=8.0&charset=utf8mb4"`,
-        mysql8_arm: `# MySQL 8 (ARM) - image compatible
+          mysql8_arm: `# MySQL 8 (ARM) - image compatible
 docker run --name mysql \
   -e MYSQL_ROOT_PASSWORD=root \
   -e MYSQL_DATABASE=app \
   -p 3306:3306 -d mysql:8.0-oracle`,
-        mariadb: `# MariaDB
+          mariadb: `# MariaDB
 docker run --name mariadb \
   -e MARIADB_ROOT_PASSWORD=root \
   -e MARIADB_DATABASE=app \
@@ -335,20 +354,20 @@ docker run --name mariadb \
 
 # Doctrine .env
 # DATABASE_URL="mysql://root:root@127.0.0.1:3306/app?serverVersion=mariadb-11.0&charset=utf8mb4"`
-      },
-      "docker-install": {
-        ubuntu: `# Ubuntu/WSL
+        },
+        "docker-install": {
+          ubuntu: `# Ubuntu/WSL
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
 sudo usermod -aG docker $USER   # re-ouvre ta session
 docker --version
 docker compose version`,
-        wsl: `# Installer WSL + Ubuntu (Windows)
+          wsl: `# Installer WSL + Ubuntu (Windows)
 wsl --install -d Ubuntu
 # Puis installe Docker Desktop et active l'intégration WSL`
-      },
-      "docker-compose": {
-        stack: `# docker-compose.yml (PHP-FPM + Nginx + MySQL)
+        },
+        "docker-compose": {
+          stack: `# docker-compose.yml (PHP-FPM + Nginx + MySQL)
 version: "3.8"
 services:
   db:
@@ -374,69 +393,70 @@ services:
 
 volumes:
   db_data: {}`
+        }
+      };
+
+      const VARIANTS = {
+        react: [
+          { value: 'npm', label: 'npm' },
+          { value: 'yarn', label: 'yarn' },
+          { value: 'pnpm', label: 'pnpm' },
+        ],
+        symfony: [
+          { value: 'webapp', label: 'Webapp (recommandé)' },
+          { value: 'skeleton', label: 'Skeleton' },
+        ],
+        doctrine: [
+          { value: 'entity', label: 'Entité + migrations' },
+          { value: 'dbtools', label: 'Outils base (drop/create/schema)' },
+        ],
+        "mysql-docker": [
+          { value: 'mysql8', label: 'MySQL 8 (x86_64)' },
+          { value: 'mysql8_arm', label: 'MySQL 8 (ARM)' },
+          { value: 'mariadb', label: 'MariaDB 11' },
+        ],
+        "docker-install": [
+          { value: 'ubuntu', label: 'Ubuntu / WSL Ubuntu' },
+          { value: 'wsl', label: 'Windows + WSL (note)' },
+        ],
+        "docker-compose": [
+          { value: 'stack', label: 'Stack PHP + Nginx + MySQL' },
+        ]
+      };
+
+      function fillVariants(cat) {
+        const opts = VARIANTS[cat] || [];
+        variantEl.innerHTML = opts.map(o => `<option value="${o.value}">${o.label}</option>`).join('');
       }
-    };
+      function render(cat, variant) {
+        const block = CMDS?.[cat]?.[variant] || '# (aucune commande)';
+        outEl.textContent = block;
+      }
 
-    const VARIANTS = {
-      react: [
-        {value:'npm',  label:'npm'},
-        {value:'yarn', label:'yarn'},
-        {value:'pnpm', label:'pnpm'},
-      ],
-      symfony: [
-        {value:'webapp',   label:'Webapp (recommandé)'},
-        {value:'skeleton', label:'Skeleton'},
-      ],
-      doctrine: [
-        {value:'entity',  label:'Entité + migrations'},
-        {value:'dbtools', label:'Outils base (drop/create/schema)'},
-      ],
-      "mysql-docker": [
-        {value:'mysql8',     label:'MySQL 8 (x86_64)'},
-        {value:'mysql8_arm', label:'MySQL 8 (ARM)'},
-        {value:'mariadb',    label:'MariaDB 11'},
-      ],
-      "docker-install": [
-        {value:'ubuntu', label:'Ubuntu / WSL Ubuntu'},
-        {value:'wsl',    label:'Windows + WSL (note)'},
-      ],
-      "docker-compose": [
-        {value:'stack',  label:'Stack PHP + Nginx + MySQL'},
-      ]
-    };
-
-    function fillVariants(cat){
-      const opts = VARIANTS[cat] || [];
-      variantEl.innerHTML = opts.map(o => `<option value="${o.value}">${o.label}</option>`).join('');
-    }
-    function render(cat, variant){
-      const block = CMDS?.[cat]?.[variant] || '# (aucune commande)';
-      outEl.textContent = block;
-    }
-
-    // init
-    fillVariants(categoryEl.value);
-    render(categoryEl.value, VARIANTS[categoryEl.value][0].value);
-
-    categoryEl.addEventListener('change', ()=>{
+      // init
       fillVariants(categoryEl.value);
       render(categoryEl.value, VARIANTS[categoryEl.value][0].value);
-    });
-    variantEl.addEventListener('change', ()=>{
-      render(categoryEl.value, variantEl.value);
-    });
 
-    copyBtn.addEventListener('click', async (e)=>{
-      try {
-        await navigator.clipboard.writeText(outEl.textContent);
-        e.currentTarget.textContent = 'Copié !';
-        setTimeout(()=> e.currentTarget.textContent = 'Copier', 1200);
-      } catch {
-        e.currentTarget.textContent = 'Impossible de copier';
-        setTimeout(()=> e.currentTarget.textContent = 'Copier', 1500);
-      }
-    });
-  })();
+      categoryEl.addEventListener('change', () => {
+        fillVariants(categoryEl.value);
+        render(categoryEl.value, VARIANTS[categoryEl.value][0].value);
+      });
+      variantEl.addEventListener('change', () => {
+        render(categoryEl.value, variantEl.value);
+      });
+
+      copyBtn.addEventListener('click', async (e) => {
+        try {
+          await navigator.clipboard.writeText(outEl.textContent);
+          e.currentTarget.textContent = 'Copié !';
+          setTimeout(() => e.currentTarget.textContent = 'Copier', 1200);
+        } catch {
+          e.currentTarget.textContent = 'Impossible de copier';
+          setTimeout(() => e.currentTarget.textContent = 'Copier', 1500);
+        }
+      });
+    })();
   </script>
 </body>
+
 </html>
