@@ -370,3 +370,51 @@ a.btn:hover { background:#e94358; }
     display: none;
   }
 }
+
+/* 🌿 Liste compétences (mobile) */
+.skills-list {
+  display: none; /* cachée par défaut (desktop) */
+  margin-top: 1.5em;
+}
+
+.skills-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 0.7em 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.skills-list li span {
+  font-weight: 600;
+}
+
+.skills-list .level {
+  flex: 1;
+  margin-left: 10px;
+  height: 8px;
+  background: var(--main-color);
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  /* on masque le tableau et on affiche la liste */
+  #bio table {
+    display: none;
+  }
+  .skills-list {
+    display: block;
+  }
+}
+
