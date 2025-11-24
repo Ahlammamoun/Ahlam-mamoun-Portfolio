@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-
-=======
-/* ===============================
-   🌐 Import & Variables
-=============================== */
->>>>>>> 6c0f18a (chgt d'image)
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 * { box-sizing: border-box; }
@@ -16,12 +9,6 @@
   --accent-color:#343a40;
 }
 
-<<<<<<< HEAD
-=======
-/* ===============================
-   🧭 Base
-=============================== */
->>>>>>> 6c0f18a (chgt d'image)
 body {
   margin:0;
   font-family:'Inter',sans-serif;
@@ -43,13 +30,6 @@ img { max-width:100%; height:auto; border-radius:8px; }
 
 .inner { max-width:900px; margin:0 auto; padding:2em; }
 
-<<<<<<< HEAD
-
-=======
-/* ===============================
-   🧭 Navigation
-=============================== */
->>>>>>> 6c0f18a (chgt d'image)
 #main-nav {
   background:#fff; border-bottom:1px solid #ddd; padding:1em 2em;
   position:sticky; top:0; z-index:1000;
@@ -65,26 +45,12 @@ img { max-width:100%; height:auto; border-radius:8px; }
 .hamburger.active .bar:nth-child(2){ opacity:0; }
 .hamburger.active .bar:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
 
-<<<<<<< HEAD
-
-=======
-/* ===============================
-   🦸‍♂️ Hero
-=============================== */
->>>>>>> 6c0f18a (chgt d'image)
 #page-header-first {
   background:linear-gradient(to right,#fff,#f1f1f1);
   padding:5em 2em; text-align:center;
 }
 #page-header-first h1 { color:var(--accent-color); font-size:2.5rem; }
 
-<<<<<<< HEAD
-
-=======
-/* ===============================
-   📄 Sections
-=============================== */
->>>>>>> 6c0f18a (chgt d'image)
 .page-section {
   padding:3em 1em;
   background:#fff;
@@ -94,7 +60,6 @@ img { max-width:100%; height:auto; border-radius:8px; }
 }
 .section-content { margin-top:2em; }
 
-<<<<<<< HEAD
 
 #bio table {
   width:100%;
@@ -124,41 +89,6 @@ img { max-width:100%; height:auto; border-radius:8px; }
 }
 .social-icons a { font-size:1rem; color:var(--accent-color); }
 
-=======
-/* ===============================
-   👩‍💻 Bio Table
-=============================== */
-#bio table {
-  width:100%;
-  border-collapse:collapse;
-  margin-top:2em;
-}
-#bio th,#bio td {
-  border:1px solid #ddd;
-  padding:1em;
-  text-align:center;
-  font-size:.95rem;
-}
-#bio th { background:#f0f0f0; }
-.l1,.l2,.l3,.l4,.l5,.l6,.l7,.l8 {
-  height:10px; border-radius:5px; background:var(--main-color);
-}
-.l1,.l2{ width:100%; }
-.l3,.l4{ width:90%; }
-.l5,.l6{ width:83%; }
-.l7,.l8{ width:85%; }
-
-/* ===============================
-   📨 Contact + Bouton CV
-=============================== */
-#contact { background:#fff; padding:3em 2em; border-radius:8px; }
-.social-icons {
-  display:flex; flex-direction:column;
-  gap:.5em; align-items:center; text-align:center;
-}
-.social-icons a { font-size:1rem; color:var(--accent-color); }
-
->>>>>>> 6c0f18a (chgt d'image)
 .social-icons .btn {
   margin-top: 1em;
   background: var(--main-color);
@@ -171,13 +101,6 @@ img { max-width:100%; height:auto; border-radius:8px; }
 }
 .social-icons .btn:hover { background:#e94358; }
 
-<<<<<<< HEAD
-
-=======
-/* ===============================
-   🧰 Buttons
-=============================== */
->>>>>>> 6c0f18a (chgt d'image)
 a.btn,.action-button,.btn-secondary {
   display:inline-block; padding:.5em 1.5em; border-radius:6px; font-weight:600;
   transition:background .3s ease,color .3s ease,border .3s ease;
@@ -231,13 +154,6 @@ a.btn:hover { background:#e94358; }
   display:block; border:0; background:transparent;
 }
 
-<<<<<<< HEAD
-
-=======
-/* ===============================
-   🌳 Structure Projets (Grid + Tree + CLI)
-=============================== */
->>>>>>> 6c0f18a (chgt d'image)
 .structure-grid {
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -272,20 +188,11 @@ a.btn:hover { background:#e94358; }
   padding:10px 12px; background:#fff; color:#111827;
 }
 
-<<<<<<< HEAD
-
-=======
-/* ✅ Zone d'affichage des commandes (fix dépassement) */
->>>>>>> 6c0f18a (chgt d'image)
 .cli-output{
   margin:0; padding:12px; border-radius:10px;
   background:#0f172a; color:#e5e7eb;
   font-size:.92rem; line-height:1.45;
-<<<<<<< HEAD
   overflow:auto;             
-=======
-  overflow:auto;               /* scroll si nécessaire (desktop) */
->>>>>>> 6c0f18a (chgt d'image)
   max-width:100%;
 }
 .cli-output code{
@@ -293,13 +200,6 @@ a.btn:hover { background:#e94358; }
   white-space: pre;            /* conserve la mise en forme (desktop) */
 }
 
-<<<<<<< HEAD
-
-=======
-/* ===============================
-   📱 Responsive
-=============================== */
->>>>>>> 6c0f18a (chgt d'image)
 
 /* Tablet & mobile */
 @media (max-width: 900px) {
@@ -323,23 +223,13 @@ a.btn:hover { background:#e94358; }
   #page-header-first { padding: 3em 1em; }
   #page-header-first h1 { font-size: 2rem; }
 
-<<<<<<< HEAD
-
-=======
-  /* 👩‍💻 Bio : table entière + scroll horizontal visible */
->>>>>>> 6c0f18a (chgt d'image)
   #bio .section-content {
     overflow-x:auto !important;
     -webkit-overflow-scrolling: touch;
   }
   #bio table {
-<<<<<<< HEAD
     width: max-content;       
     min-width: 560px;        
-=======
-    width: max-content;        /* ✅ garde toutes les colonnes */
-    min-width: 560px;          /* force le scroll si écran étroit */
->>>>>>> 6c0f18a (chgt d'image)
     border-collapse: collapse;
   }
   #bio th,#bio td {
@@ -355,11 +245,7 @@ a.btn:hover { background:#e94358; }
 
   /* 🧰 Commandes: empêcher le dépassement sur mobile (wrap) */
   .cli-output{
-<<<<<<< HEAD
     white-space: pre-wrap;     
-=======
-    white-space: pre-wrap;     /* ✅ retour à la ligne */
->>>>>>> 6c0f18a (chgt d'image)
     word-break: break-word;
     overflow-wrap: anywhere;
   }
@@ -390,18 +276,12 @@ a.btn:hover { background:#e94358; }
   .project-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 }
 
-<<<<<<< HEAD
-
-=======
-/* (facultatif) Indication d'aide pour scroll horizontal du tableau */
->>>>>>> 6c0f18a (chgt d'image)
 .scroll-hint {
   font-size: 0.8rem;
   color: #666;
   text-align: right;
   margin-bottom: .5em;
 }
-<<<<<<< HEAD
 
 #bio .section-content {
   overflow-x: auto;
@@ -411,17 +291,6 @@ a.btn:hover { background:#e94358; }
 }
 
 
-=======
-/* 📊 Tableau Bio — Scroll mobile élégant */
-#bio .section-content {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 0 0.5rem 8px 0.5rem; /* ✅ espace latéral */
-  position: relative;
-}
-
-/* 🌿 Ombre subtile à droite pour indiquer qu'on peut scroller ➡️ */
->>>>>>> 6c0f18a (chgt d'image)
 #bio .section-content::after {
   content: "";
   position: absolute;
@@ -433,11 +302,6 @@ a.btn:hover { background:#e94358; }
   pointer-events: none;
 }
 
-<<<<<<< HEAD
-
-=======
-/* ✅ Tableau */
->>>>>>> 6c0f18a (chgt d'image)
 #bio table {
   min-width: 600px;
   border-collapse: collapse;
@@ -459,11 +323,6 @@ a.btn:hover { background:#e94358; }
   background: #f1f1f1;
 }
 
-<<<<<<< HEAD
-
-=======
-/* ✨ Scrollbar visible & élégante */
->>>>>>> 6c0f18a (chgt d'image)
 #bio .section-content::-webkit-scrollbar {
   height: 8px;
 }
@@ -482,11 +341,6 @@ a.btn:hover { background:#e94358; }
   border-radius: 4px;
 }
 
-<<<<<<< HEAD
-
-=======
-/* 📱 Ajustement mobile */
->>>>>>> 6c0f18a (chgt d'image)
 @media (max-width: 600px) {
   #bio table {
     min-width: 520px; /* ✅ évite coupure */
@@ -497,18 +351,12 @@ a.btn:hover { background:#e94358; }
   }
 }
 
-<<<<<<< HEAD
-
-=======
-/* ✅ Désactive l'ombre de scroll sur desktop */
->>>>>>> 6c0f18a (chgt d'image)
 @media (min-width: 900px) {
   #bio .section-content::after {
     display: none;
   }
 }
 
-<<<<<<< HEAD
 /* 🌿 Liste compétences (mobile) */
 .skills-list {
   display: none; /* cachée par défaut (desktop) */
@@ -555,9 +403,4 @@ a.btn:hover { background:#e94358; }
     display: block;
   }
 }
-=======
-
-
-
->>>>>>> 6c0f18a (chgt d'image)
 
