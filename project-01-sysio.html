@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>sys.io — SaaS candidatures | Ahlam Mamoun</title>
+  <meta name="description" content="sys.io : SaaS pour trouver des entreprises tech près de chez soi et envoyer automatiquement sa candidature. Stack React, Symfony, Stripe, MySQL, Docker, Nginx, CI/CD GitHub Actions." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ahlam Mamoun</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#projects">Projets</a></li>
+        <li><a href="index.html#skills">Compétences</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Basculer le thème">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+            <span class="theme-text">Thème</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero" style="padding-bottom: 0;">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Case Study</p>
+          <h1>
+            syshr.io: <span class="grad">SaaS</span><br/>
+            recherche d’entreprises & candidatures auto
+          </h1>
+
+          <p class="lead">
+            syshr.io permet de <strong>trouver des entreprises tech près de chez soi</strong> et
+            <strong>d’envoyer automatiquement sa candidature</strong> selon ses critères (poste, stack, localisation).
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://sys.io" target="_blank" rel="noreferrer">🚀 Voir le site</a>
+            <a class="btn btn-ghost" href="index.html#projects">← Retour aux projets</a>
+            <a class="btn btn-ghost" href="project-02-africafactspress.html">→ Projet suivant</a>
+          </div>
+
+          <div class="hero-badges">
+            <span class="badge">React</span>
+            <span class="badge">Symfony</span>
+            <span class="badge">Stripe</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Nginx</span>
+            <span class="badge">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card reveal">
+            <h3 style="margin:0 0 10px;">Fiche projet</h3>
+            <div style="display:grid; gap:10px;">
+              <div class="stat" style="box-shadow:none;">
+                <p class="stat-n">Objectif</p>
+                <p class="stat-l">Centraliser la recherche d’entreprises tech locales + automatiser les candidatures.</p>
+              </div>
+              <div class="stat" style="box-shadow:none;">
+                <p class="stat-n">Mon rôle</p>
+                <p class="stat-l">Développement fullstack : front React, API Symfony, base MySQL, déploiement Docker.</p>
+              </div>
+              <div class="stat" style="box-shadow:none;">
+                <p class="stat-n">Points forts</p>
+                <p class="stat-l">Automatisation, parcours utilisateur clair, paiement Stripe, pipeline CI/CD.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card code-card reveal" style="margin-top:14px;">
+            <p class="code-title">Stack</p>
+            <pre><code>Front: React
+Back: Symfony (API) + Doctrine
+Paiement: Stripe
+DB: MySQL
+Infra: Docker + Nginx
+CI/CD: GitHub Actions</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="card reveal">
+            <h3>Fonctionnalités</h3>
+            <ul class="list">
+              <li>Recherche d’entreprises tech par proximité (zone/rayon)</li>
+              <li>Filtres (poste, technos, type d’entreprise) + tri des résultats</li>
+              <li>Profil candidat : infos, CV, préférences, message de candidature</li>
+              <li>Envoi automatique de candidatures (selon critères définis)</li>
+              <li>Historique & suivi : candidatures envoyées, statut, relances (si activé)</li>
+              <li>Abonnement / paiement via Stripe</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Points techniques</h3>
+            <ul class="list">
+              <li>API Symfony structurée (routes, services) + Doctrine (entités/migrations)</li>
+              <li>Sécurité : authentification + contrôle d’accès (rôles/permissions)</li>
+              <li>Automatisation : jobs/cron pour déclencher les envois à intervalle</li>
+              <li>Stripe : gestion checkout / webhooks (abonnements / paiement)</li>
+              <li>Docker : environnement reproductible (front/back/db) + Nginx reverse proxy</li>
+              <li>CI/CD GitHub Actions : build/tests + déploiement automatisé</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card reveal callout" style="margin-top:16px;">
+          <h3>Ce que j’ai appris</h3>
+          <p class="muted">
+            Concevoir un SaaS “from scratch” : API + front, industrialiser le déploiement (Docker + CI/CD),
+            intégrer Stripe proprement (webhooks) et fiabiliser l’automatisation d’envoi (jobs).
+          </p>
+        </div>
+
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="card reveal">
+            <h3>Liens</h3>
+            <div class="contact-list">
+              <a class="contact-item" href="https://sys.io" target="_blank" rel="noreferrer">🚀 Site sys.io</a>
+              <!-- Si tu as un repo public, ajoute-le ici :
+              <a class="contact-item" href="https://github.com/..." target="_blank" rel="noreferrer">💻 GitHub</a>
+              -->
+            </div>
+  
+          </div>
+
+          <div class="card reveal">
+            <h3>Navigation</h3>
+            <a class="btn btn-ghost" href="index.html#projects">← Retour aux projets</a>
+            <a class="btn btn-primary" href="project-02-africafactspress.html">→ Projet suivant</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Ahlam Mamoun — sys.io</p>
+        <p class="muted">Case Study</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

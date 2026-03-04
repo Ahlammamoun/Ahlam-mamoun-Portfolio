@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cinephora — App cinéma | Ahlam Mamoun</title>
+  <meta name="description" content="Cinephora : application web cinéma (catalogue, détails, filtres, compte). Stack React, Symfony, MySQL, Docker, Nginx, CI/CD GitHub Actions." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ahlam Mamoun</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#projects">Projets</a></li>
+        <li><a href="index.html#skills">Compétences</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Basculer le thème">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+            <span class="theme-text">Thème</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero" style="padding-bottom:0;">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Case Study</p>
+          <h1>
+            Cinephora<br/>
+            <span class="grad">App cinéma</span> (React + API)
+          </h1>
+
+          <p class="lead">
+            Application web dédiée au cinéma : <strong>catalogue de films</strong>, <strong>détails</strong>,
+            <strong>recherche & filtres</strong> et parcours utilisateur (compte/connexion), avec un backend API.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://cinephora.fr" target="_blank" rel="noreferrer">🎬 Voir le site</a>
+            <a class="btn btn-ghost" href="index.html#projects">← Retour aux projets</a>
+          </div>
+
+          <div class="hero-badges">
+            <span class="badge">React</span>
+            <span class="badge">Symfony</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Nginx</span>
+            <span class="badge">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card reveal">
+            <h3 style="margin:0 0 10px;">Fiche projet</h3>
+
+            <div style="display:grid; gap:10px;">
+              <div class="stat" style="box-shadow:none;">
+                <p class="stat-n">Type</p>
+                <p class="stat-l">Application web cinéma : navigation, recherche, pages film et séances.</p>
+              </div>
+
+              <div class="stat" style="box-shadow:none;">
+                <p class="stat-n">Mon rôle</p>
+                <p class="stat-l">Développement fullstack : front React, API Symfony, base MySQL, conteneurisation Docker + Nginx et CI/CD.</p>
+              </div>
+
+              <div class="stat" style="box-shadow:none;">
+                <p class="stat-n">Focus</p>
+                <p class="stat-l">UX fluide : navigation rapide, filtres utiles et pages détaillées propres.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card code-card reveal" style="margin-top:14px;">
+            <p class="code-title">Stack</p>
+            <pre><code>Front: React
+Back: Symfony (API) + Doctrine
+DB: MySQL
+Infra: Docker + Nginx
+CI/CD: GitHub Actions</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="card reveal">
+            <h3>Fonctionnalités</h3>
+            <ul class="list">
+              <li>Catalogue de films + pages détaillées (synopsis, infos)</li>
+              <li>Recherche et filtres (catégories, séances, etc.)</li>
+              <li>Connexion / compte utilisateur (si activé)</li>
+              <li>Espace admin : gestion des films / catégories / séances (si activé)</li>
+              <li>Affichage dynamique des contenus via API</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Points techniques</h3>
+            <ul class="list">
+              <li>Routing + structure composants React (pages, layout, composants UI)</li>
+              <li>Consommation API : fetch/axios, gestion erreurs, états de chargement</li>
+              <li>API Symfony : endpoints, validation, sécurité (rôles/permissions si admin)</li>
+              <li>MySQL + migrations Doctrine pour les données films/séances</li>
+              <li>Docker + Nginx : environnement reproductible et déploiement stable</li>
+              <li>CI/CD GitHub Actions : build/tests + déploiement automatisé</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card reveal callout" style="margin-top:16px;">
+          <h3>Ce que j’ai appris</h3>
+          <p class="muted">
+            Construire une app orientée données avec une UI réactive, organiser un front React propre (composants/routing),
+            et fiabiliser l’ensemble via une API Symfony + Docker + CI/CD.
+          </p>
+        </div>
+
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="card reveal">
+            <h3>Liens</h3>
+            <div class="contact-list">
+              <a class="contact-item" href="https://cinephora.fr" target="_blank" rel="noreferrer">🎬 Site Cinephora</a>
+            </div>
+          
+          </div>
+
+          <div class="card reveal">
+            <h3>Navigation</h3>
+            <a class="btn btn-ghost" href="project-04-moroccoall.html">← Projet précédent</a>
+            <a class="btn btn-primary" href="index.html#projects">Fin → Retour aux projets</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Ahlam Mamoun — Cinephora</p>
+        <p class="muted">Case Study</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bing-Bang — Mini jeu | Ahlam Mamoun</title>
+  <meta name="description" content="Bing-Bang : mini jeu web en HTML/CSS/JS (déplacement au clavier, obstacles, score) — projet portfolio." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ahlam Mamoun</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#projects">Projets</a></li>
+        <li><a href="index.html#skills">Compétences</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Basculer le thème">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+            <span class="theme-text">Thème</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero" style="padding-bottom:0;">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Case Study</p>
+          <h1>
+            Bing-Bang<br />
+            <span class="grad">Mini jeu</span> HTML / CSS / JS
+          </h1>
+
+          <p class="lead">
+            Petit jeu web en JavaScript : tu déplaces le personnage au clavier (← →) pour éviter les obstacles,
+            avec génération dynamique et score.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://ahlammamoun.github.io/Bing-Bang/" target="_blank" rel="noreferrer">🎮 Jouer (GitHub Pages)</a>
+            <a class="btn btn-ghost" href="https://github.com/Ahlammamoun/Bing-Bang" target="_blank" rel="noreferrer">💻 Code GitHub</a>
+            <a class="btn btn-ghost" href="index.html#projects">← Retour aux projets</a>
+          </div>
+
+          <div class="hero-badges">
+            <span class="badge">JavaScript</span>
+            <span class="badge">DOM</span>
+            <span class="badge">Game loop</span>
+            <span class="badge">GitHub Pages</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card reveal">
+            <h3 style="margin:0 0 10px;">Fiche projet</h3>
+
+            <div style="display:grid; gap:10px;">
+              <div class="stat" style="box-shadow:none;">
+                <p class="stat-n">But</p>
+                <p class="stat-l">Survivre en se déplaçant à gauche/droite pour passer dans les ouvertures.</p>
+              </div>
+
+              <div class="stat" style="box-shadow:none;">
+                <p class="stat-n">Contrôles</p>
+                <p class="stat-l">Clavier : flèches ← → (gestion keydown/keyup).</p>
+              </div>
+
+              <div class="stat" style="box-shadow:none;">
+                <p class="stat-n">Score</p>
+                <p class="stat-l">Calcul du score et affichage en fin de partie, puis relance.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card code-card reveal" style="margin-top:14px;">
+            <p class="code-title">Stack</p>
+            <pre><code>HTML • CSS • JavaScript
+Déploiement : GitHub Pages</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- DETAILS -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="card reveal">
+            <h3>Gameplay</h3>
+            <ul class="list">
+              <li>Déplacement horizontal du personnage via listeners clavier</li>
+              <li>Obstacles générés dynamiquement dans le DOM, avec ouverture aléatoire</li>
+              <li>Défilement des obstacles via une boucle de mise à jour</li>
+              <li>Fin de partie : affichage du score + relance</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Points techniques</h3>
+            <ul class="list">
+              <li>Manipulation DOM (createElement, appendChild, remove)</li>
+              <li>Lecture de styles/positions pour gérer les collisions</li>
+              <li>Timers (setInterval) pour l’animation et la génération</li>
+              <li>Déploiement sur GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card reveal callout" style="margin-top:16px;">
+          <h3>Améliorations possibles (version 2)</h3>
+          <p class="muted">
+            Support mobile (touch), score en UI (sans alert), difficulté progressive, écran start/retry,
+            et boucle plus fluide avec requestAnimationFrame.
+          </p>
+        </div>
+
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="card reveal">
+            <h3>Liens</h3>
+            <div class="contact-list">
+              <a class="contact-item" href="https://ahlammamoun.github.io/Bing-Bang/" target="_blank" rel="noreferrer">🎮 Jouer</a>
+              <a class="contact-item" href="https://github.com/Ahlammamoun/Bing-Bang" target="_blank" rel="noreferrer">💻 Repo GitHub</a>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Navigation</h3>
+            <a class="btn btn-ghost" href="index.html#projects">← Retour aux projets</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Ahlam Mamoun — Bing-Bang</p>
+        <p class="muted">Case Study</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

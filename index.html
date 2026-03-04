@@ -1,476 +1,461 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ahlam Mamoun — Développeuse PHP / Symfony / React</title>
+  <meta name="description"
+    content="Portfolio de Ahlam Mamoun, développeuse PHP/Symfony/React. Projets, compétences et contact." />
+
+  <!-- Open Graph (optionnel) -->
+  <meta property="og:title" content="Ahlam Mamoun — Portfolio" />
+  <meta property="og:description" content="Développeuse PHP/Symfony/React — Projets, compétences, contact." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
-  <div id="page-wrapper">
+  <a class="skip-link" href="#content">Aller au contenu</a>
 
-    <header id="page-header-first">
-      <nav id="main-nav" title="main-nav">
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#content">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ahlam Mamoun</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Basculer le thème">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+            <span class="theme-text">Thème</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Développeuse d'applications</p>
+          <h1>
+            Je construis des apps web <span class="grad">robustes</span><br />
+            en <span class="grad">PHP / Symfony</span> & <span class="grad">React</span>.
+          </h1>
+          <p class="lead">
+            Passionnée par le backend, j’aime concevoir des APIs, sécuriser les données
+            et livrer des fonctionnalités fiables — avec une UI moderne côté front.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">Voir mes projets</a>
+            <a class="btn btn-ghost" href="#contact">Me contacter</a>
+            <a class="btn btn-ghost" href="images/my-cv.pdf" download>📄 Télécharger mon CV</a>
+          </div>
+
+          <div class="hero-badges">
+            <span class="badge">Symfony</span>
+            <span class="badge">Doctrine</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">Docker</span>
+            <span class="badge">CI/CD</span>
+            <span class="badge">React</span>
+          </div>
         </div>
 
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
-          <li class="nav-item"><a href="#intro" class="nav-link">A propos</a></li>
-          <li class="nav-item"><a href="#bio" class="nav-link">Bio</a></li>
-          <li class="nav-item"><a href="projects.html" class="nav-link">Projets</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Me contacter</a></li>
-        </ul>
-      </nav>
-
-      <h1>
-        <span>Bonjour,</span> <span>Je m'appelle Ahlam,</span><br>
-        <span class="scd">Développeuse PHP/Symfony/React</span>
-      </h1>
-      <p><span></span></p>
-    </header>
-
-    <section id="intro" class="page-section">
-      <div class="inner">
-        <h2 class="section-title"><span>A propos</span></h2>
-        <div class="section-content">
-          <p class="text-up">
-           Passionnée par le développement web, titulaire d’un Bachelor en conception et développement fullstack, 
-           je suis prête à m’investir pleinement dans les projets qui me seront confiés.     </p>
-        </div>
-        <div class="actions">
-          <a href="projects.html" class="action-button action-button-plain">PROJETS</a> |
-          <a href="#contact" class="action-button action-button-line">ME CONTACTER</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SECTION STRUCTURE ===== -->
-    <section id="structure" class="page-section">
-      <div class="inner">
-        <h2 class="section-title"><span>Structure des projets</span></h2>
-
-        <div class="structure-grid">
-          <!-- Colonne gauche : arborescence -->
-          <ul class="tree play-on-scroll" id="projectTree">
-            <li class="dir">
-              <details open>
-                <summary><span>.github/</span></summary>
-                <ul>
-                  <li class="dir">
-                    <details open>
-                      <summary><span>workflows/</span></summary>
-                      <ul>
-                        <li class="file"><span>deploy.yml</span></li>
-                      </ul>
-                    </details>
-                  </li>
-                </ul>
-              </details>
-            </li>
-
-            <li class="dir">
-              <details open>
-                <summary><span>frontend/</span></summary>
-                <ul>
-                  <li class="dir"><span>src/</span></li>
-                  <li class="dir"><span>public/</span></li>
-                  <li class="file"><span>DockerFile.yml</span></li>
-                </ul>
-              </details>
-            </li>
-
-            <li class="dir">
-              <details open>
-                <summary><span>backend/</span></summary>
-                <ul>
-                  <li class="dir"><span>config/</span></li>
-                  <li class="dir"><span>src/</span></li>
-                  <li class="file"><span>DockerFile.yml</span></li>
-                </ul>
-              </details>
-            </li>
-
-            <li class="dir">
-              <details>
-                <summary><span>nginx/</span></summary>
-                <ul>
-                  <li class="file"><span>default.conf</span></li>
-                </ul>
-              </details>
-            </li>
-
-            <li class="dir"><span>vendor/</span></li>
-
-            <li class="file"><span>.dockerignore</span></li>
-            <li class="file"><span>.gitignore</span></li>
-            <li class="file"><span>deploy-final.txt</span></li>
-            <li class="file"><span>docker-compose.yml</span></li>
-            <li class="file"><span>README.md</span></li>
-          </ul>
-
-          <!-- Colonne droite : panneau de commandes (selects) -->
-          <div class="cli-panel">
-            <h3 class="cli-title">Commandes rapides</h3>
-
-            <div class="cli-controls">
-              <div class="field">
-                <label for="cmd-category">Technologie</label>
-                <select id="cmd-category">
-                  <option value="react">React (Vite)</option>
-                  <option value="symfony">Symfony + Doctrine</option>
-                  <option value="doctrine">Doctrine (entités/migrations)</option>
-                  <option value="mysql-docker">MySQL (Docker)</option>
-                  <option value="docker-install">Docker (installation)</option>
-                  <option value="docker-compose">docker-compose.yml (exemple)</option>
-                </select>
+        <div class="hero-right">
+          <div class="card profile-card reveal">
+            <div class="profile-top">
+              <div class="avatar" aria-hidden="true">AM</div>
+              <div>
+                <p class="profile-name">Ahlam Mamoun</p>
+                <p class="profile-role">PHP / Symfony / React</p>
               </div>
-
-              <div class="field">
-                <label for="cmd-variant">Variante</label>
-                <select id="cmd-variant"></select>
-              </div>
-
-              <button class="btn copy-btn" id="copyCmd" type="button">Copier</button>
             </div>
 
-            <pre class="cli-output"><code id="cmdOutput"></code></pre>
+            <div class="profile-stats">
+              <div class="stat">
+                <p class="stat-n">Fullstack</p>
+                <p class="stat-l">Orientation back-end</p>
+              </div>
+              <div class="stat">
+                <p class="stat-n">Qualité</p>
+                <p class="stat-l">Code propre + sécurité</p>
+              </div>
+              <div class="stat">
+                <p class="stat-n">Livraison</p>
+                <p class="stat-l">Docker + CI/CD</p>
+              </div>
+            </div>
+
+            <div class="profile-links">
+              <a class="chip" href="https://www.linkedin.com/in/ahlam-mamoun/" target="_blank"
+                rel="noreferrer">LinkedIn</a>
+              <button class="chip" id="copyEmail">
+                📋 email
+              </button>
+              <a class="chip" href="#projects">Projets</a>
+            </div>
+          </div>
+
+          <div class="card code-card reveal">
+            <p class="code-title">Exemple de stack</p>
+            <pre><code>Symfony + Doctrine + MySQL
+React (Vite)
+Docker / Nginx
+CI/CD (GitHub Actions)</code></pre>
           </div>
         </div>
       </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
     </section>
-    <!-- ===== /SECTION STRUCTURE ===== -->
 
-    <section id="bio" class="page-section">
-      <div class="inner">
-        <h2 class="section-title"><span>Bio</span></h2>
-        <div class="section-content">
-
-          <h3 class="text-bio">
-            Je suis une développeuse orientée Back-End. J'aime beaucoup contribuer à une application en
-            construisant des mécanismes, des fonctionnalités, en sécurisant et en faisant circuler les
-            données. Factoriser le code tout en le rendant communicant, c’est comme assembler les pièces
-            d’un puzzle sans qu’elles ne se touchent.<br>
-            Voici une évaluation évolutive de mes compétences.
-          </h3>
-
-          <table>
-            <tr>
-              <th colspan="2">Développement</th>
-              <th colspan="2">Technique</th>
-            </tr>
-            <tr>
-              <th>Langage</th>
-              <th>Note</th>
-              <th>Framework & Environnement</th>
-              <th>Note</th>
-            </tr>
-            <tr>
-              <td data-label="Langage">Css</td>
-              <td data-label="Note">
-                <div class="l1"></div>
-              </td>
-              <td data-label="Framework & Environnement">Ci-Cd</td>
-              <td data-label="Note">
-                <div class="l2"></div>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Langage">Mysql</td>
-              <td data-label="Note">
-                <div class="l3"></div>
-              </td>
-              <td data-label="Framework & Environnement">Docker</td>
-              <td data-label="Note">
-                <div class="l4"></div>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Langage">PHP</td>
-              <td data-label="Note">
-                <div class="l5"></div>
-              </td>
-              <td data-label="Framework & Environnement">Symfony</td>
-              <td data-label="Note">
-                <div class="l6"></div>
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Langage">JavaScript</td>
-              <td data-label="Note">
-                <div class="l7"></div>
-              </td>
-              <td data-label="Framework & Environnement">React.js</td>
-              <td data-label="Note">
-                <div class="l8"></div>
-              </td>
-            </tr>
-          </table>
-          
-
-<div class="skills-list">
-  <ul>
-    <li><span>CSS</span><div class="level l1"></div></li>
-    <li><span>MySQL</span><div class="level l3"></div></li>
-    <li><span>PHP</span><div class="level l5"></div></li>
-    <li><span>JavaScript</span><div class="level l7"></div></li>
-    <li><span>CI/CD</span><div class="level l2"></div></li>
-    <li><span>Docker</span><div class="level l4"></div></li>
-    <li><span>Symfony</span><div class="level l6"></div></li>
-    <li><span>React.js</span><div class="level l8"></div></li>
-  </ul>
-</div>
-
-
-          <h3 class="text-bio">
-            A propos de moi et de mes soft skills : je suis une développeuse passionnée, travailleuse
-            acharnée, avec un fort esprit d'équipe. Je suis une personne enjouée et je préfère
-            définitivement me concentrer sur le positif, même si "all is not rosy".
-          </h3>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>À propos</h2>
 
         </div>
-      </div>
-    </section>
 
+        <div class="grid-2">
+          <div class="card reveal">
+            <h3>Mon approche</h3>
+            <p>
+              Titulaire d’un Bachelor en conception et développement fullstack,
+              je suis prête à m’investir pleinement dans des projets web.
+              J’aime structurer proprement, factoriser, documenter, et livrer.
+            </p>
+            <ul class="list">
+              <li> API & sécurité (auth, validation, roles)</li>
+              <li> Architecture claire (services, clean code)</li>
+              <li> Performance, pagination, cache si besoin</li>
+            </ul>
+          </div>
 
-    <section id="contact" class="page-section">
-      <div class="inner">
-        <h2 class="section-title"><span>Contact</span></h2>
-        <div class="section-content">
-          <span id="msg"></span>
-          <div class="social-icons">
-            <p class="footer">mestar.ale@gmail.com</p>
-            <p class="footer">06.13.46.93.40</p>
-            <a class="footer" href="https://www.linkedin.com/in/ahlam-mamoun/">LinkedIn</a><br>
-            <a href="images/my-cv.pdf" download class="btn bnt2">Télécharger mon CV</a>
+          <div class="card reveal">
+            <h3>Ce que je recherche</h3>
+            <p>
+              Un environnement où je peux contribuer sur le backend (Symfony/Doctrine),
+              tout en collaborant sur des interfaces modernes côté React.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Esprit d’équipe</span>
+              <span class="pill">Curiosité</span>
+              <span class="pill">Autonomie</span>
+              <span class="pill">Qualité</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer id="page-footer">
-      &copy; Ahlam Mamoun <i class="fas fa-handshake"></i>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projets</h2>
+
+        </div>
+
+        <div class="project-grid">
+          <!-- 1) sys.io -->
+          <article class="card project reveal">
+            <div class="thumb">
+              <img src="images/projects/sysio.jpg" alt="Aperçu du site sys.io" loading="lazy">
+            </div>
+
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🧠</div>
+              <div>
+                <h3>syshr.io</h3>
+                <p class="muted">SaaS : trouver des entreprises tech près de chez soi et envoyer sa candidature
+                  automatiquement.</p>
+              </div>
+            </div>
+
+            <div class="tags">
+              <span class="tag">symfony</span><span class="tag">React</span><span class="tag">Mysql</span><span
+                class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">nginx</span>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://sys.io" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-01-sysio.html">Détails</a>
+            </div>
+          </article>
+
+          <!-- 2) Africa Facts Press -->
+          <article class="card project reveal">
+            <div class="thumb">
+              <img src="images/projects/africafactspress.jpg" alt="Aperçu du site Africa Facts Press" loading="lazy">
+            </div>
+
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">📰</div>
+              <div>
+                <h3>Africa Facts Press</h3>
+                <p class="muted">Site média : actu, enquêtes & analyses.</p>
+              </div>
+            </div>
+
+            <div class="tags">
+              <span class="tag">stripe</span><span class="tag">symfony</span><span class="tag">react</span><span
+                class="tag">mysql</span><span class="tag">docker</span><span class="tag">ci/cd</span><span
+                class="tag">nginx</span>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://africafactspress.com/" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-02-africafactspress.html">Détails</a>
+            </div>
+          </article>
+
+          <!-- 3) StitchlyHook -->
+          <article class="card project reveal">
+            <div class="thumb">
+              <img src="images/projects/stitchlyhook.jpg" alt="Aperçu du site StitchlyHook" loading="lazy">
+            </div>
+
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🧵</div>
+              <div>
+                <h3>StitchlyHook</h3>
+                <p class="muted">Boutique / catalogue (front React).</p>
+              </div>
+            </div>
+
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">stripe</span><span class="tag">symfony</span><span
+                class="tag">mysql</span><span class="tag">docker</span><span class="tag">ci/cd</span><span
+                class="tag">nginx</span>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://stitchlyhook.com/" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-03-stitchlyhook.html">Détails</a>
+            </div>
+          </article>
+
+          <!-- 4) MoroccoAll -->
+          <article class="card project reveal">
+            <div class="thumb">
+              <img src="images/projects/moroccoall.jpg" alt="Aperçu du site MoroccoAll" loading="lazy">
+            </div>
+
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🧺</div>
+              <div>
+                <h3>MoroccoAll</h3>
+                <p class="muted">E-commerce artisanat marocain (catégories + produits).</p>
+              </div>
+            </div>
+
+            <div class="tags">
+              <span class="tag">E-commerce</span><span class="tag">symfony</span><span class="tag">react</span><span
+                class="tag">mysql</span><span class="tag">docker</span><span class="tag">ci/cd</span><span
+                class="tag">nginx</span>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://moroccoall.com/" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-04-moroccoall.html">Détails</a>
+            </div>
+          </article>
+
+          <!-- 5) Cinephora -->
+          <article class="card project reveal">
+            <div class="thumb">
+              <img src="images/projects/cinephora.jpg" alt="Aperçu du site Cinephora" loading="lazy">
+            </div>
+
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🎬</div>
+              <div>
+                <h3>Cinephora</h3>
+                <p class="muted">App cinéma (front React) — catalogue / navigation.</p>
+              </div>
+            </div>
+
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">App</span><span class="tag">symfony</span><span
+                class="tag">mysql</span><span class="tag">docker</span><span class="tag">ci/cd</span><span
+                class="tag">nginx</span><span class="tag">mongodb</span>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://cinephora.com" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-05-cinephora.html">Détails</a>
+            </div>
+          </article>
+
+          <!-- Bonus) Bing-Bang -->
+          <article class="card project reveal">
+            <div class="thumb">
+              <img src="images/projects/bingbang.jpg" alt="Aperçu du jeu Bing-Bang" loading="lazy">
+            </div>
+
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🎮</div>
+              <div>
+                <h3>Bing-Bang</h3>
+                <p class="muted">Mini jeu JavaScript (clavier), obstacles + score.</p>
+              </div>
+            </div>
+
+            <div class="tags">
+              <span class="tag">JavaScript</span><span class="tag">DOM</span><span class="tag">Game</span>
+            </div>
+
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://ahlammamoun.github.io/Bing-Bang/" target="_blank"
+                rel="noreferrer">Jouer</a>
+              <a class="btn btn-primary" href="project-06-bing-bang.html">Détails</a>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top:16px;">
+          <a class="btn btn-ghost" href="projects.html">Voir tous mes projets →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Compétences</h2>
+
+        </div>
+
+        <div class="grid-2">
+          <div class="card reveal">
+            <h3>Développement</h3>
+
+            <div class="skill">
+              <div class="skill-row"><span>PHP</span><span class="muted">Avancé</span></div>
+              <div class="bar">
+                <div style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>JavaScript</span><span class="muted">Bon</span></div>
+              <div class="bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>CSS</span><span class="muted">Bon</span></div>
+              <div class="bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>MySQL</span><span class="muted">Bon</span></div>
+              <div class="bar">
+                <div style="width: 78%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Framework & Technique</h3>
+
+            <div class="skill">
+              <div class="skill-row"><span>Symfony</span><span class="muted">Avancé</span></div>
+              <div class="bar">
+                <div style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>React</span><span class="muted">Bon</span></div>
+              <div class="bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>Docker</span><span class="muted">Bon</span></div>
+              <div class="bar">
+                <div style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-row"><span>CI/CD</span><span class="muted">Bon</span></div>
+              <div class="bar">
+                <div style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card reveal callout">
+          <h3>Soft skills</h3>
+          <p class="muted">
+            Passionnée, travailleuse, esprit d’équipe, positive et orientée solution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (sans formulaire) -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+
+        </div>
+
+        <div class="card reveal">
+          <h3>Infos</h3>
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:mestar.ale@gmail.com">📩 mestar.ale@gmail.com</a>
+            <a class="contact-item" href="tel:+33613469340">📞 06 13 46 93 40</a>
+            <a class="contact-item" href="https://www.linkedin.com/in/ahlam-mamoun/" target="_blank" rel="noreferrer">💼
+              LinkedIn</a>
+            <a class="contact-item" href="images/my-cv.pdf" download>
+              📄 Télécharger mon CV
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Ahlam Mamoun</p>
+
+      </div>
     </footer>
+  </main>
 
-  </div><!-- /#page-wrapper -->
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="js/app.js?v=1"></script>
-
-  <!-- Inline JS pour l'arborescence + selects -->
-  <script>
-    // Animation arborescence au scroll
-    (function () {
-      const tree = document.getElementById('projectTree');
-      if (!tree) return;
-      const items = Array.from(tree.querySelectorAll('li'));
-      items.forEach((li, i) => li.style.setProperty('--d', (i * 0.08) + 's'));
-      const play = () => tree.classList.add('play');
-      if ('IntersectionObserver' in window) {
-        const io = new IntersectionObserver((entries, obs) => {
-          entries.forEach(e => { if (e.isIntersecting) { play(); obs.unobserve(tree); } });
-        }, { threshold: 0.25 });
-        io.observe(tree);
-      } else { play(); }
-    })();
-
-    // Panneau commandes : catégories/variantes + copier
-    (function () {
-      const categoryEl = document.getElementById('cmd-category');
-      const variantEl = document.getElementById('cmd-variant');
-      const outEl = document.getElementById('cmdOutput');
-      const copyBtn = document.getElementById('copyCmd');
-      if (!categoryEl || !variantEl || !outEl || !copyBtn) return;
-
-      const CMDS = {
-        react: {
-          npm: `# Prérequis : Node.js + npm
-npm create vite@latest frontend -- --template react
-cd frontend
-npm install
-npm run dev`,
-          yarn: `# Avec yarn
-npm create vite@latest frontend -- --template react
-cd frontend
-yarn
-yarn dev`,
-          pnpm: `# Avec pnpm
-npm create vite@latest frontend -- --template react
-cd frontend
-pnpm i
-pnpm dev`
-        },
-        symfony: {
-          webapp: `# Prérequis : PHP, Composer, (optionnel) Symfony CLI
-symfony new backend --webapp
-cd backend
-composer require symfony/orm-pack
-composer require --dev symfony/maker-bundle
-
-# Dans .env (exemple MySQL Docker)
-# DATABASE_URL="mysql://root:root@127.0.0.1:3306/app?serverVersion=8.0&charset=utf8mb4"
-
-php bin/console doctrine:database:create
-php bin/console make:migration
-php bin/console doctrine:migrations:migrate
-
-symfony server:start -d`,
-          skeleton: `# Variante skeleton
-composer create-project symfony/skeleton backend
-cd backend
-composer require symfony/framework-bundle twig annotations
-composer require symfony/orm-pack
-composer require --dev symfony/maker-bundle`
-        },
-        doctrine: {
-          entity: `# Créer une entité
-php bin/console make:entity
-
-# Générer et appliquer la migration
-php bin/console make:migration
-php bin/console doctrine:migrations:migrate
-
-# (Option) Charger des fixtures
-composer require --dev orm-fixtures
-php bin/console doctrine:fixtures:load`,
-          dbtools: `# (Re)créer la base localement
-php bin/console doctrine:database:drop --force
-php bin/console doctrine:database:create
-php bin/console doctrine:schema:update --force`
-        },
-        "mysql-docker": {
-          mysql8: `# MySQL 8 (x86_64)
-docker run --name mysql \
-  -e MYSQL_ROOT_PASSWORD=root \
-  -e MYSQL_DATABASE=app \
-  -p 3306:3306 -d mysql:8.0
-
-# Doctrine .env
-# DATABASE_URL="mysql://root:root@127.0.0.1:3306/app?serverVersion=8.0&charset=utf8mb4"`,
-          mysql8_arm: `# MySQL 8 (ARM) - image compatible
-docker run --name mysql \
-  -e MYSQL_ROOT_PASSWORD=root \
-  -e MYSQL_DATABASE=app \
-  -p 3306:3306 -d mysql:8.0-oracle`,
-          mariadb: `# MariaDB
-docker run --name mariadb \
-  -e MARIADB_ROOT_PASSWORD=root \
-  -e MARIADB_DATABASE=app \
-  -p 3306:3306 -d mariadb:11
-
-# Doctrine .env
-# DATABASE_URL="mysql://root:root@127.0.0.1:3306/app?serverVersion=mariadb-11.0&charset=utf8mb4"`
-        },
-        "docker-install": {
-          ubuntu: `# Ubuntu/WSL
-sudo apt update
-sudo apt install -y docker.io docker-compose-plugin
-sudo usermod -aG docker $USER   # re-ouvre ta session
-docker --version
-docker compose version`,
-          wsl: `# Installer WSL + Ubuntu (Windows)
-wsl --install -d Ubuntu
-# Puis installe Docker Desktop et active l'intégration WSL`
-        },
-        "docker-compose": {
-          stack: `# docker-compose.yml (PHP-FPM + Nginx + MySQL)
-version: "3.8"
-services:
-  db:
-    image: mysql:8.0
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: app
-    ports: ["3306:3306"]
-    volumes: ["db_data:/var/lib/mysql"]
-
-  php:
-    image: php:8.2-fpm
-    volumes:
-      - ./backend:/var/www/html
-
-  nginx:
-    image: nginx:alpine
-    ports: ["8080:80"]
-    volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./backend:/var/www/html:ro
-    depends_on: [php]
-
-volumes:
-  db_data: {}`
-        }
-      };
-
-      const VARIANTS = {
-        react: [
-          { value: 'npm', label: 'npm' },
-          { value: 'yarn', label: 'yarn' },
-          { value: 'pnpm', label: 'pnpm' },
-        ],
-        symfony: [
-          { value: 'webapp', label: 'Webapp (recommandé)' },
-          { value: 'skeleton', label: 'Skeleton' },
-        ],
-        doctrine: [
-          { value: 'entity', label: 'Entité + migrations' },
-          { value: 'dbtools', label: 'Outils base (drop/create/schema)' },
-        ],
-        "mysql-docker": [
-          { value: 'mysql8', label: 'MySQL 8 (x86_64)' },
-          { value: 'mysql8_arm', label: 'MySQL 8 (ARM)' },
-          { value: 'mariadb', label: 'MariaDB 11' },
-        ],
-        "docker-install": [
-          { value: 'ubuntu', label: 'Ubuntu / WSL Ubuntu' },
-          { value: 'wsl', label: 'Windows + WSL (note)' },
-        ],
-        "docker-compose": [
-          { value: 'stack', label: 'Stack PHP + Nginx + MySQL' },
-        ]
-      };
-
-      function fillVariants(cat) {
-        const opts = VARIANTS[cat] || [];
-        variantEl.innerHTML = opts.map(o => `<option value="${o.value}">${o.label}</option>`).join('');
-      }
-      function render(cat, variant) {
-        const block = CMDS?.[cat]?.[variant] || '# (aucune commande)';
-        outEl.textContent = block;
-      }
-
-      // init
-      fillVariants(categoryEl.value);
-      render(categoryEl.value, VARIANTS[categoryEl.value][0].value);
-
-      categoryEl.addEventListener('change', () => {
-        fillVariants(categoryEl.value);
-        render(categoryEl.value, VARIANTS[categoryEl.value][0].value);
-      });
-      variantEl.addEventListener('change', () => {
-        render(categoryEl.value, variantEl.value);
-      });
-
-      copyBtn.addEventListener('click', async (e) => {
-        try {
-          await navigator.clipboard.writeText(outEl.textContent);
-          e.currentTarget.textContent = 'Copié !';
-          setTimeout(() => e.currentTarget.textContent = 'Copier', 1200);
-        } catch {
-          e.currentTarget.textContent = 'Impossible de copier';
-          setTimeout(() => e.currentTarget.textContent = 'Copier', 1500);
-        }
-      });
-    })();
-  </script>
+  <script src="assets/app.js"></script>
 </body>
 
 </html>

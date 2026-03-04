@@ -1,133 +1,268 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8" />
-  <title>Mes projets | Portfolio Ahlam</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mes projets — Ahlam Mamoun</title>
+  <meta name="description" content="Mes projets : Symfony, React, Docker/CI-CD et mini-projets JavaScript." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.project-card').forEach(card => {
-      card.classList.add('is-in');
-    });
-  });
-</script>
 
 <body>
-  <div id="page-wrapper">
-    <header id="page-header">
-      <nav id="main-nav">
-        <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link">Accueil</a></li>
-          <li><a href="index.html#contact" class="nav-link">Me contacter</a></li>
-        </ul>
-        <!-- Menu burger -->
-        <div class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" role="button" tabindex="0">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+  <a class="skip-link" href="#content">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ahlam Mamoun</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="projects.html" aria-current="page">Projets</a></li>
+        <li><a href="index.html#skills">Compétences</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="Basculer le thème">
+            <span class="theme-icon" aria-hidden="true">☾</span>
+            <span class="theme-text">Thème</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Mes projets</h2>
+
         </div>
 
-      </nav>
-    </header>
-
-
-    <section id="work" class="page-section">
-      <div class="inner">
-        <h2 class="section-title"><span>Mes projets</span></h2>
-
         <div class="project-grid">
-          <!-- Exemple de carte projet -->
-          <div class="project-card">
+          <!-- 1) sys.io -->
+          <article class="card project reveal">
             <div class="thumb">
-              <img src="images/project-1.jpg" alt="Cinéphoria" />
+              <img src="images/projects/sysio.jpg" alt="Aperçu sys.io" loading="lazy">
             </div>
-            <h3>Cinéphoria</h3>
-            <p>Application de site de cinéma<br><strong>Symfony / React / Docker / CI-CD</strong></p>
-            <a href="https://cinephora.fr/" target="_blank" class="btn">Voir le site</a>
-            <a href="project1.html" class="btn btn-secondary">Détails</a>
-          </div>
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🧠</div>
+              <div>
+                <h3>sys.io</h3>
+                <p class="muted">SaaS : trouver des entreprises tech près de chez soi et envoyer sa candidature automatiquement.</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Symfony</span><span class="tag">Stripe</span><span class="tag">Docker</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://sys.io" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-01-sysio.html">Détails</a>
+            </div>
+          </article>
 
-          <div class="project-card">
+          <!-- 2) Africa Facts Press -->
+          <article class="card project reveal">
             <div class="thumb">
-              <img src="images/project-2.jpg" alt="stitchlyhook" />
+              <img src="images/projects/africafactspress.jpg" alt="Aperçu Africa Facts Press" loading="lazy">
             </div>
-            <h3>stitchlyhook</h3>
-            <p>Application de vente en ligne<br><strong>Symfony / React / Docker / CI-CD</strong></p>
-            <a href="https://stitchlyhook.com/" target="_blank" class="btn">Voir le site</a>
-            <a href="project2.html" class="btn btn-secondary">Détails</a>
-          </div>
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">📰</div>
+              <div>
+                <h3>Africa Facts Press</h3>
+                <p class="muted">Média : actualités, analyses & enquêtes.</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">Contenu</span><span class="tag">SEO</span><span class="tag">Web</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://africafactspress.com/" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-02-africafactspress.html">Détails</a>
+            </div>
+          </article>
 
-          <div class="project-card">
+          <!-- 3) StitchlyHook -->
+          <article class="card project reveal">
             <div class="thumb">
-              <img src="images/project-3.jpg" alt="Moroccoall" />
+              <img src="images/projects/stitchlyhook.jpg" alt="Aperçu StitchlyHook" loading="lazy">
             </div>
-            <h3>Moroccoall</h3>
-            <p>Application de vente en ligne<br><strong>Symfony / React / Docker / CI-CD</strong></p>
-            <a href="https://moroccoall.com/" target="_blank" class="btn">Voir le site</a>
-            <a href="project3.html" class="btn btn-secondary">Détails</a>
-          </div>
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🧵</div>
+              <div>
+                <h3>StitchlyHook</h3>
+                <p class="muted">E-commerce produits crochet : catalogue, panier, paiement Stripe.</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Symfony</span><span class="tag">Stripe</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://stitchlyhook.com/" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-03-stitchlyhook.html">Détails</a>
+            </div>
+          </article>
 
-
-          <div class="project-card">
+          <!-- 4) MoroccoAll -->
+          <article class="card project reveal">
             <div class="thumb">
-              <img src="images/project-5.jpg" alt="Drag and Drop" />
+              <img src="images/projects/moroccoall.jpg" alt="Aperçu MoroccoAll" loading="lazy">
             </div>
-            <h3>Drag and Drop</h3>
-            <p>Projet de glisser-déposer<br><strong>JavaScript</strong></p>
-            <a href="https://ahlammamoun.github.io/drag-n-drop/" target="_blank" class="btn">Voir le site</a>
-            <a href="project5.html" class="btn btn-secondary">Détails</a>
-          </div>
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🧺</div>
+              <div>
+                <h3>MoroccoAll</h3>
+                <p class="muted">E-commerce artisanat marocain : catégories, produits, commande.</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Symfony</span><span class="tag">MySQL</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://moroccoall.com/" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-04-moroccoall.html">Détails</a>
+            </div>
+          </article>
 
-
-
-          <div class="project-card">
+          <!-- 5) Cinephora -->
+          <article class="card project reveal">
             <div class="thumb">
-              <img src="images/project-7.jpg" alt="Menu Resto" />
+              <img src="images/projects/cinephora.jpg" alt="Aperçu Cinephora" loading="lazy">
             </div>
-            <h3>Menu Resto</h3>
-            <p>Menu JS dynamique<br><strong>JavaScript</strong></p>
-            <a href="https://ahlammamoun.github.io/menu-js-dynamique/" target="_blank" class="btn">Voir le site</a>
-          </div>
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🎬</div>
+              <div>
+                <h3>Cinephora</h3>
+                <p class="muted">App cinéma : catalogue, pages film, recherche & filtres.</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Symfony</span><span class="tag">Docker</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://cinephora.fr" target="_blank" rel="noreferrer">Site</a>
+              <a class="btn btn-primary" href="project-05-cinephora.html">Détails</a>
+            </div>
+          </article>
 
-          <div class="project-card">
+          <!-- 6) Bing-Bang -->
+          <article class="card project reveal">
             <div class="thumb">
-              <img src="images/project-8.jpg" alt="Form JS" />
+              <img src="images/projects/bingbang.jpg" alt="Aperçu Bing-Bang" loading="lazy">
             </div>
-            <h3>Form JS</h3>
-            <p>Formulaire interactif<br><strong>JavaScript</strong></p>
-            <a href="https://ahlammamoun.github.io/Form-js/" target="_blank" class="btn">Voir le site</a>
-          </div>
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🎮</div>
+              <div>
+                <h3>Bing-Bang</h3>
+                <p class="muted">Mini jeu JavaScript : obstacles + score (GitHub Pages).</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">JavaScript</span><span class="tag">DOM</span><span class="tag">Game</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://ahlammamoun.github.io/Bing-Bang/" target="_blank" rel="noreferrer">Jouer</a>
+              <a class="btn btn-primary" href="project-06-bing-bang.html">Détails</a>
+            </div>
+          </article>
 
-          <div class="project-card">
+          <!-- 7) Drag & Drop -->
+          <article class="card project reveal">
             <div class="thumb">
-              <img src="images/project-9.jpg" alt="Team Players" />
+              <img src="images/projects/drag-drop.jpg" alt="Aperçu Drag & Drop" loading="lazy">
             </div>
-            <h3>Team Players</h3>
-            <p>Animations JS<br><strong>JavaScript</strong></p>
-            <a href="https://ahlammamoun.github.io/Make-Your-Team/" target="_blank" class="btn">Voir le site</a>
-          </div>
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🧲</div>
+              <div>
+                <h3>Drag & Drop</h3>
+                <p class="muted">Glisser-déposer en JavaScript.</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">JavaScript</span><span class="tag">D&D</span><span class="tag">UI</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://ahlammamoun.github.io/drag-n-drop/" target="_blank" rel="noreferrer">Site</a>
+   
+            </div>
+          </article>
 
-          <div class="project-card">
+          <!-- 8) Menu JS dynamique -->
+          <article class="card project reveal">
             <div class="thumb">
-              <img src="images/project-10.jpg" alt="Ball Game" />
+              <img src="images/projects/menu-js.jpg" alt="Aperçu Menu JS dynamique" loading="lazy">
             </div>
-            <h3>Game Ball</h3>
-            <p>Animations JS<br><strong>JavaScript</strong></p>
-            <a href="https://ahlammamoun.github.io/Bing-Bang/" target="_blank" class="btn">Voir le site</a>
-          </div>
+            <div class="project-top">
+              <div class="project-icon" aria-hidden="true">🍽️</div>
+              <div>
+                <h3>Menu JS dynamique</h3>
+                <p class="muted">Menu interactif en JavaScript.</p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="tag">JavaScript</span><span class="tag">DOM</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://ahlammamoun.github.io/menu-js-dynamique/" target="_blank" rel="noreferrer">Voir le site</a>
+            </div>
+          </article>
 
+ 
+
+
+        </div>
+
+        <div style="margin-top:16px;">
+          <a class="btn btn-ghost" href="index.html#projects">← Retour à l’accueil</a>
         </div>
       </div>
     </section>
 
-    <footer id="page-footer">
-      &copy; Ahlam Mamoun - Tous droits réservés
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Ahlam Mamoun</p>
+        <p class="muted">Fait avec HTML/CSS/JS</p>
+      </div>
     </footer>
-  </div>
-  <script src="js/animations.js" defer></script>
+  </main>
 
+  <script src="assets/app.js"></script>
+
+  <!-- Animation reveal au scroll (léger) -->
+  <script>
+    (function () {
+      const els = document.querySelectorAll('.reveal');
+      if (!els.length) return;
+
+      const show = (el) => el.classList.add('is-in');
+
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(show);
+        return;
+      }
+
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            show(e.target);
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
 </body>
-
 </html>
