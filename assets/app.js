@@ -16,29 +16,28 @@ if (toggle && links) {
   });
 }
 
-// ----- Thème (dark/light) -----
+
 const root = document.documentElement;
 const themeBtn = document.querySelector(".theme-toggle");
 const THEME_KEY = "ahlam_theme";
 
 function setTheme(mode) {
-  if (mode === "light") root.setAttribute("data-theme", "light");
-  else root.removeAttribute("data-theme");
-
+  root.setAttribute("data-theme", mode); // "light" ou "dark"
   localStorage.setItem(THEME_KEY, mode);
+
   const icon = document.querySelector(".theme-icon");
   if (icon) icon.textContent = mode === "light" ? "☀" : "☾";
 }
 
-const saved = localStorage.getItem(THEME_KEY);
-if (saved) setTheme(saved);
+// init
+setTheme(localStorage.getItem(THEME_KEY) || "dark");
 
-if (themeBtn) {
-  themeBtn.addEventListener("click", () => {
-    const current = root.getAttribute("data-theme") === "light" ? "light" : "dark";
-    setTheme(current === "light" ? "dark" : "light");
-  });
-}
+// toggle
+themeBtn?.addEventListener("click", () => {
+  const current = root.getAttribute("data-theme") || "dark";
+  setTheme(current === "dark" ? "light" : "dark");
+});
+
 
 // ----- Reveal on scroll -----
 const revealEls = document.querySelectorAll(".reveal");
@@ -96,3 +95,5 @@ if (emailBtn) {
     });
   });
 }
+
+
